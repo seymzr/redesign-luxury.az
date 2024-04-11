@@ -5,3 +5,9 @@
 .bg-hero{
     background: url('../public/banner.png') center/cover;
 }
+.bg-services{
+    background:url('../public/servicespage-bg.jpg') center/cover;
+}
+.bg-about{
+    background:url("../public/aboutpage-bg.png") center/cover;
+}
