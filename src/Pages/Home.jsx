@@ -41,19 +41,14 @@ const Home = () => {
     ]
     
     const projects = [
-        {
-            img: '/project1.png',
-            name: 'Modern Kitchen',
-            text: 'Decor / Artchitecture'
-        },
+        
         {
             img: '/project2.png',
             name: 'Modern Bedroom',
             text: 'Decor / Artchitecture'
-        },
-        {
-            img: '/project3.png',
-            name: 'Modern Dining Hall',
+        },{
+            img: '/project1.png',
+            name: 'Modern Kitchen',
             text: 'Decor / Artchitecture'
         },
         {
@@ -61,6 +56,11 @@ const Home = () => {
             name: 'Modern Living Room',
             text: 'Decor / Artchitecture'
         },
+        {
+            img: '/project3.png',
+            name: 'Modern Dining Hall',
+            text: 'Decor / Artchitecture'
+        }
     ]
     
     const clientLogos = [
@@ -146,6 +146,74 @@ const Home = () => {
 			<img src="/about-img.png" alt="" />
 		</div>
 	</section>
+    <section class="lg:max-w-[1200px] px-12 xl:px-0 w-full mx-auto pt-[100px] lg:pt-[200px] ">
+	<div class="w-full flex flex-col bg-primary-300 rounded-[48px] px-6 py-[88px]">
+		<h2 class="font-dm tracking-wide text-center leading-[37px] lg:leading-[62.50px] text-[30px] lg:text-[50px] w-full lg:max-w-[50%] pb-9 mx-auto">What the People Thinks About Us</h2>
+		<div class="flex flex-col gap-8 lg:gap-10 lg:flex-row justify-between">
+			{
+			reviews.map((rev) => {
+				return (
+					<div class="w-full bg-white max-w-[370px] px-[37px] py-[53px] rounded-3xl mx-auto flex flex-col justify-center gap-4 md:gap-6">
+						<div class="flex flex-col sm:flex-row gap-6 items-center">
+							<img src={rev.img} alt="" />
+							<p class="flex flex-col tracking-tight leading-9">
+								<span class="text-primary-200 text-lg lg:text-[25px] font-dm">{rev.name}</span>
+								<span class="text-text-gray-200 text-base lg:text-lg font-jost">{rev.location}</span>
+							</p>
+						</div>
+						<p class="font-jost tracking-tight leading-8 text-base text-center sm:text-left text-text-gray lg:text-[22px]">{rev.review}</p>
+					</div>
+			)
+		})
+		}
+		</div>
+	</div>
+	</section>
+
+
+
+	<section class="lg:max-w-[1200px] px-12 xl:px-0 w-full mx-auto pt-[100px] lg:pt-[200px] ">
+		<div class="w-full flex flex-row justify-between items-center gap-12 max-w-[1200px] overflow-x-scroll no-scrollbar">
+			{
+				clientLogos.map(logo => <img src={logo.img} alt="" />)
+			}
+		</div>
+	</section>
+
+
+
+	<section class="lg:max-w-[1200px] px-12 xl:px-0 w-full mx-auto pt-[100px] lg:pt-[200px] ">
+		<h2 class="font-dm tracking-wide text-center leading-[37px] lg:leading-[62.50px] text-[30px] lg:text-[50px] w-full lg:max-w-[50%] pb-2 mx-auto">Follow Our Projects</h2>
+		<p class="text-base md:text-[22px] text-center tracking-tight font-jost text-text-gray leading-[33px] lg:max-w-[60%] mx-auto">It is a long established fact that a reader will be distracted by the of readable content of page  lookings at its layouts  points.</p>
+		<div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-x-[104px] lg:gap-y-[56px] mt-12 lg:mt-[93px]">
+			{
+			projects.map((proj) => {
+				return (
+					<div class="w-full flex flex-col gap-4">
+					<img src={proj.img} alt="" />
+							<p class="flex flex-col tracking-tight leading-9">
+								<span class="text-primary-200 text-lg lg:text-[25px] font-dm">{proj.name}</span>
+								<span class="text-text-gray-200 text-base lg:text-lg font-jost">{proj.text}</span>
+							</p>
+					</div>
+			)
+		})
+		}
+		</div>
+	</section>
+
+
+	<section class="w-full bg-primary-300 px-12 xl:px-0 mx-auto mt-[100px] lg:mt-[200px] py-[151px]">
+		<div class="w-full max-w-[1200px] mx-auto flex lg:justify-center items-center overflow-x-scroll no-scrollbar">
+			{
+				experiences.map((exp, i) => {
+					return(
+						<Experience text={exp.text} num={exp.num} i={i} client:load />
+					)
+				})
+			}
+		</div>
+	</section>
     </div>
   )
 }
@@ -207,74 +275,7 @@ export default Home
 
 	<!-- What People Think About Us Section -->
 
-	<section class="lg:max-w-[1200px] px-12 xl:px-0 w-full mx-auto pt-[100px] lg:pt-[200px] ">
-	<div class="w-full flex flex-col bg-primary-300 rounded-[48px] px-6 py-[88px]">
-		<h2 class="font-dm tracking-wide text-center leading-[37px] lg:leading-[62.50px] text-[30px] lg:text-[50px] w-full lg:max-w-[50%] pb-9 mx-auto">What the People Thinks About Us</h2>
-		<div class="flex flex-col gap-8 lg:gap-10 lg:flex-row justify-between">
-			{
-			reviews.map((rev) => {
-				return (
-					<div class="w-full bg-white max-w-[370px] px-[37px] py-[53px] rounded-3xl mx-auto flex flex-col justify-center gap-4 md:gap-6">
-						<div class="flex flex-col sm:flex-row gap-6 items-center">
-							<img src={rev.img} alt="" />
-							<p class="flex flex-col tracking-tight leading-9">
-								<span class="text-primary-200 text-lg lg:text-[25px] font-dm">{rev.name}</span>
-								<span class="text-text-gray-200 text-base lg:text-lg font-jost">{rev.location}</span>
-							</p>
-						</div>
-						<p class="font-jost tracking-tight leading-8 text-base text-center sm:text-left text-text-gray lg:text-[22px]">{rev.review}</p>
-					</div>
-			)
-		})
-		}
-		</div>
-	</div>
-	</section>
-
-	<!-- Client Logo Section -->
-
-	<section class="lg:max-w-[1200px] px-12 xl:px-0 w-full mx-auto pt-[100px] lg:pt-[200px] ">
-		<div class="w-full flex flex-row justify-between items-center gap-12 max-w-[1200px] overflow-x-scroll no-scrollbar">
-			{
-				clientLogos.map(logo => <img src={logo.img} alt="" />)
-			}
-		</div>
-	</section>
-
-	<!-- Projects Section -->
-
-	<section class="lg:max-w-[1200px] px-12 xl:px-0 w-full mx-auto pt-[100px] lg:pt-[200px] ">
-		<h2 class="font-dm tracking-wide text-center leading-[37px] lg:leading-[62.50px] text-[30px] lg:text-[50px] w-full lg:max-w-[50%] pb-2 mx-auto">Follow Our Projects</h2>
-		<p class="text-base md:text-[22px] text-center tracking-tight font-jost text-text-gray leading-[33px] lg:max-w-[60%] mx-auto">It is a long established fact that a reader will be distracted by the of readable content of page  lookings at its layouts  points.</p>
-		<div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-x-[104px] lg:gap-y-[56px] mt-12 lg:mt-[93px]">
-			{
-			projects.map((proj) => {
-				return (
-					<div class="w-full flex flex-col gap-4">
-					<img src={proj.img} alt="" />
-							<p class="flex flex-col tracking-tight leading-9">
-								<span class="text-primary-200 text-lg lg:text-[25px] font-dm">{proj.name}</span>
-								<span class="text-text-gray-200 text-base lg:text-lg font-jost">{proj.text}</span>
-							</p>
-					</div>
-			)
-		})
-		}
-		</div>
-	</section>
-
-	<!-- Experience Section -->
-	<section class="w-full bg-primary-300 px-12 xl:px-0 mx-auto mt-[100px] lg:mt-[200px] py-[151px]">
-		<div class="w-full max-w-[1200px] mx-auto flex lg:justify-center items-center overflow-x-scroll no-scrollbar">
-			{
-				experiences.map((exp, i) => {
-					return(
-						<Experience text={exp.text} num={exp.num} i={i} client:load />
-					)
-				})
-			}
-		</div>
-	</section>
+	
 </MainLayout>
  
 
