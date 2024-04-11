@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 body{
-    
+    background: url('../public/Background.jpg');
 }
 .bg-hero{
     background: url('../public/banner.png') center/cover fixed;

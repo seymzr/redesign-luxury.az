@@ -67,7 +67,7 @@ const Services = () => {
     },
   ];
   return (
-    <di className="bg-main">
+    <di className="">
       <section class="w-full bg-services h-[50vh] flex justify-center items-end">
         <div class="py-[30px] lg:py-[41px] px-[60px] lg:px-[152px] flex flex-col justify-center items-center bg-white rounded-tl-[37px] rounded-tr-[37px] gap-2.5">
           <h1 class="text-[30px] leading-[40px] lg:text-[50px] lg:leading-[62px] font-dm capitalize text-primary-200 ">

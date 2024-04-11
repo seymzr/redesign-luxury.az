@@ -6,7 +6,7 @@ import  LinkedIn  from '../icons/linkedin.tsx';
 import Instagram  from '../icons/instagram.tsx';
 const About = () => {
   return (
-    <div className='bg-main'>
+    <div className=''>
         <section className="w-full bg-about h-[50vh] flex justify-center items-end">
     <div className="py-[30px] lg:py-[41px] px-[60px] lg:px-[152px] flex flex-col justify-center items-center bg-white rounded-tl-[37px] rounded-tr-[37px] gap-2.5">
       <h1 className="text-[30px] leading-[40px] lg:text-[50px] lg:leading-[62px] font-dm capitalize text-primary-200 ">About Us</h1>
