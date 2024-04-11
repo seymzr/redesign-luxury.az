@@ -13,12 +13,15 @@ function App() {
   return (
     <BrowserRouter>
     <Navbar />
-      <Routes>
+      <Routes >
         <Route path="/" element={<Home />} />
         <Route path="about"  element={<About />}/>
         <Route path="services"  element={<Services />}/>
       </Routes>
       <Footer />
+      <p class="tracking-tight text-base text-center border border-gray-300 bg-white py-10 lg:text-[22px] lg:leading-[33px] font-jost text-text-gray">
+        Copyright © Redesign Luxury | Site Created by 
+    </p>
     </BrowserRouter>
   )
 }
