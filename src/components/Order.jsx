@@ -427,7 +427,7 @@ function ColorPicker({ label, updateSelectedColors }) {
                 value={customColor}
                 onChange={handleCustomColorChange}
             />
-            <button className='bg-white/40 px-1 mx-1' onClick={handleAddCustomColor}>Rəng əlavə et</button>
+            <button className='bg-primary-100 px-2 py-1 text-white mx-1' onClick={handleAddCustomColor}>Rəng əlavə et</button>
             </div>
         </div>
     );
