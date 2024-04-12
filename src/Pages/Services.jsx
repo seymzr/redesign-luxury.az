@@ -68,17 +68,9 @@ const Services = () => {
   ];
   return (
     <di className="">
-      <section class="w-full bg-services h-[50vh] flex justify-center items-end">
-        <div class="py-[30px] lg:py-[41px] px-[60px] lg:px-[152px] flex flex-col justify-center items-center bg-white rounded-tl-[37px] rounded-tr-[37px] gap-2.5">
-          <h1 class="text-[30px] leading-[40px] lg:text-[50px] lg:leading-[62px] font-dm capitalize text-primary-200 ">
-            Services
-          </h1>
-          <p class="text-base lg:text-[22px] lg:leading-[33px] tracking-tight font-jost text-text-gray">
-            {" "}
-            <a href="/">Home</a> / Services{" "}
-          </p>
-        </div>
-      </section>
+      <div className="bg-[url('/backgroundproject.jpg')] bg-center bg-cover px-12">
+                <h1 className="container py-64 text-6xl font-semibold tracking-widest text-white ">OUR PROJECTS</h1>
+            </div>
 
       <section class="lg:max-w-[1200px] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-10 lg:gap-y-12 xl:px-0 w-full mx-auto pt-[100px] lg:pt-[200px] justify-between ">
         {services.map((service) => {
