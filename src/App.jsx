@@ -22,7 +22,7 @@ function App() {
       </Routes>
       <Footer />
       <p class="tracking-tight text-base text-center border border-gray-300 bg-white py-10 lg:text-[22px] lg:leading-[33px] font-jost text-text-gray">
-        Copyright © Redesign Luxury | Site Created by <a href="https://www.linkedin.com/in/seymzr/" target="_blank" className="font-serif">seymzr</a>
+        Copyright © Redesign Luxury | Site Created by <a href="https://solo.to/seymzr" target="_blank" className="font-serif">seymzr</a>
     </p>
     </BrowserRouter>
   )
