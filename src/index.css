@@ -8,7 +8,7 @@ body{
     background: url('../public/banner.png') center/cover fixed;
 }
 .bg-services{
-    background:url('../public/servicespage-bg.jpg') center/cover;
+    background:url('../public/backgroundproject.jpg') center/cover;
 }
 .bg-about{
     background:url("../public/aboutpage-bg.png") center/cover;
