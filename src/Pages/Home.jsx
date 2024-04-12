@@ -3,6 +3,7 @@ import Button from "../components/button.tsx";
 import ArrowSec from "../icons/arrow-sec.tsx";
 import CallIcon from "../icons/call.tsx";
 import Experience from "../components/experience.tsx";
+import Catalogue from "../components/Catalogue.jsx";
 const Home = () => {
   const services = [
     {
@@ -117,27 +118,7 @@ const Home = () => {
         </div>
       </section>
 
-      <section class="lg:max-w-[1200px] flex flex-col gap-8 lg:gap-10 lg:flex-row px-12 xl:px-0 w-full mx-auto pt-[100px] lg:pt-[200px] justify-between ">
-        {services.map((service) => {
-          return (
-            <div class="w-full max-w-[358px] mx-auto flex flex-col justify-center items-center gap-3 md:gap-5">
-              <h3 class="text-text-blue font-dm text-[22px] md:text-[25px] leading-loose">
-                {service.title}
-              </h3>
-              <p class="text-base md:text-[22px] tracking-tight font-jost text-text-gray leading-[33px] text-center">
-                {" "}
-                {service.text}
-              </p>
-              <a
-                href="/services"
-                class="text-text-gray-200 leading-snug text-lg tracking-tight font-jost font-semibold gap-2 py-4 md:py-8 startCenter"
-              >
-                Read More <ArrowSec />
-              </a>
-            </div>
-          );
-        })}
-      </section>
+      <Catalogue />
 
       <section class="w-full lg:max-w-[1200px] mx-auto px-12 xl:px-0 flex flex-col-reverse justify-center items-center lg:grid grid-cols-2 gap-[75px] pt-[100px] lg:pt-[200px]">
         <div class="flex flex-col gap-8 max-w-[472px] items-center lg:items-start py-6">
