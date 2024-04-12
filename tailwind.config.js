@@ -10,7 +10,7 @@ module.exports = {
         hero: "url('/banner.png')",
         main: "url('/Background.jpg')",
         about: "url('/aboutpage-bg.png')",
-        services: "url('/servicespage-bg.jpg')",
+        services: "url('/backgroundproject.jpg')",
         contact: "url('/contactpage-bg.jpg')",
       },
       fontFamily: {
