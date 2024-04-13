@@ -18,7 +18,7 @@ const Navbar = () => {
 
       {/* Nav List for Desktop */}
       {matches && (
-        <nav className="flex flex-row gap-6">
+        <nav className="flex flex-row items-center gap-6">
           <a href="/" className={linkStyle}>
             Home
           </a>
@@ -34,6 +34,11 @@ const Navbar = () => {
           <a href="/contact" className={linkStyle}>
             Contact Us
           </a>
+          <select name="" id="" className="text-lg focus:outline-none leading-6 font-jost text-primary-200">
+            <option value="az">AZE</option>
+            <option value="en">ENG</option>
+            <option value="ru">RU</option>
+          </select>
         </nav>
       )}
 
@@ -82,6 +87,11 @@ const Navbar = () => {
           <a href="/contact" className={linkStyle}>
             Contact Us
           </a>
+          <select name="" id="" className="text-lg focus:outline-none leading-6 font-jost text-primary-200">
+            <option value="az">AZE</option>
+            <option value="en">ENG</option>
+            <option value="ru">RU</option>
+          </select>
         </motion.nav>
       )}
     </div>
