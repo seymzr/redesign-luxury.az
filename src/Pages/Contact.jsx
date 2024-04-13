@@ -18,8 +18,8 @@ const Contact = () => {
       </section>
 
       <section class="lg:max-w-[1200px] flex flex-col gap-8 lg:gap-10 px-12 xl:px-0 w-full mx-auto pt-[100px] lg:pt-[200px]">
-        <h2 class="text-[30px] text-center capitalize font-dm tracking-wide lg:max-w-[60%] leading-8 md:leading-[62.50px] md:text-[50px] mx-auto text-text-blue ">
-          We love meeting new people and helping them.
+        <h2 class="text-[30px] text-center  font-dm tracking-wide lg:max-w-[60%] leading-8 md:leading-[62.50px] md:text-[50px] mx-auto text-text-blue ">
+        Sizdə Redesign Luxury ilə arzuladığınız evə sahib olun
         </h2>
 
         <div class="grid grid-cols-1 md:grid-cols-2 gap-[55px] pt-20  place-content-center">
