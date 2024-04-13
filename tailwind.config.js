@@ -14,7 +14,7 @@ module.exports = {
         contact: "url('/contactpage-bg.jpg')",
       },
       fontFamily: {
-        dm: ["DM Serif Display", "serif"],
+        dm: ["Playfair Display", "serif"],
         jost: ["Poppins", "sans-serif"], // Ensure fonts with spaces have " " surrounding it.
       },
       colors: {
