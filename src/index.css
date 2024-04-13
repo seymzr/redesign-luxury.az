@@ -16,3 +16,8 @@ body{
 .bg-contact{
     background:url("/contactpage-bg.jpg") center/cover;
 }
+video {
+    width: 100%;
+    background-repeat: no-repeat;
+    object-fit: cover;
+}
