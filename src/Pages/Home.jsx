@@ -133,7 +133,7 @@ const Home = () => {
           Peşəkar komandamız tərəfindən interyeriniz , ən xırda detalına qədər düşünülür
           </p>
           <div class="flex gap-4 pt-3 items-center">
-            <CallIcon />
+            <a href="tel:+994502555200"><CallIcon /></a>
             <p class="flex flex-col text-text-gray-200 font-jost tracking-tight">
               <span class="text-2xl font-bold leading-9 ">050 255 52 00</span>
               <span class="text-[22px] leading-8">Bizə zəng edin</span>
