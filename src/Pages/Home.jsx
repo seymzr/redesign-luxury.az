@@ -110,7 +110,7 @@ const Home = () => {
             {" "}
             {/* Let Your Home Be Unique */}Eviniz Özəl Olsun{" "}
           </h1>
-          <p class="text-base md:text-[22px] pb-5 font-jost text-primary-400 w-full lg:max-w-[50%]">
+          <p class=" md:text-[22px] pb-5 font-jost text-primary-400 w-full lg:max-w-[50%]">
           Evinizin fərqli interyerə sahib olmağını istəyirsizsə Redesign Luxury komandasına müraciət edə bilərsiz
           </p>
           {/* <Button text="Get Started" variant="secondary" className="self-start"/> */}

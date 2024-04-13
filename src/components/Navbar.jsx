@@ -7,7 +7,7 @@ const Navbar = () => {
   const [toggled, setToggled] = useState(false);
   const matches = useMediaQuery("(min-width: 1280px)");
 
-  const linkStyle = "text-xl leading-6 font-jost text-primary-200";
+  const linkStyle = "text-xl leading-6 font-jost text-primary-200 hover:text-primary-100 font-medium duration-300";
 
   return (
     <div className="max-w-[1200px] px-12 xl:px-0 m-auto w-full py-5 flex justify-between items-center z-50">
@@ -20,21 +20,21 @@ const Navbar = () => {
       {matches && (
         <nav className="flex flex-row items-center gap-6">
           <a href="/" className={linkStyle}>
-            Home
+            Ana Səhifə
           </a>
           <a href="/about" className={linkStyle}>
-            About Us
+            Haqqımızda
           </a>
           <a href="/services" className={linkStyle}>
-            Services
+            Xidmətlər
           </a>
           <a href="/gallery" className={linkStyle}>
-            Gallery
+            Qalereya
           </a>
           <a href="/contact" className={linkStyle}>
-            Contact Us
+            Əlaqə
           </a>
-          <select name="" id="" className="text-lg focus:outline-none leading-6 font-jost text-primary-200">
+          <select name="" id="" className="text-lg focus:outline-none font-medium leading-6 font-jost text-primary-200">
             <option value="az">AZE</option>
             <option value="en">ENG</option>
             <option value="ru">RU</option>
@@ -73,19 +73,19 @@ const Navbar = () => {
           className="flex flex-col fixed h-screen bg-white w-[75%] md:w-[90%] text-black bottom-0 left-0 gap-6 items-center justify-center"
         >
           <a href="/" className={linkStyle}>
-            Home
+            Ana Səhifə
           </a>
           <a href="/about" className={linkStyle}>
-            About Us
+            Haqqımızda
           </a>
           <a href="/services" className={linkStyle}>
-            Services
+            Xidmətlər
           </a>
           <a href="/gallery" className={linkStyle}>
-            Gallery
+            Qalereya
           </a>
           <a href="/contact" className={linkStyle}>
-            Contact Us
+            Əlaqə
           </a>
           <select name="" id="" className="text-lg focus:outline-none leading-6 font-jost text-primary-200">
             <option value="az">AZE</option>
