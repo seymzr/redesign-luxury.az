@@ -127,21 +127,20 @@ const Home = () => {
       <section class="w-full lg:max-w-[1200px] mx-auto px-12 xl:px-0 flex flex-col-reverse justify-center items-center lg:grid grid-cols-2 gap-[75px] pt-[100px] lg:pt-[200px]">
         <div class="flex flex-col gap-8 max-w-[472px] items-center lg:items-start py-6">
           <h2 class="text-[30px] text-center capitalize lg:text-left font-dm tracking-wide leading-8 md:leading-[62.50px] md:text-[50px] text-text-blue ">
-            We Create The Art Of Stylish Living Stylishly
+          Minimalist toxunuşlarla maksimum rahatlıq
           </h2>
           <p class="text-base md:text-[22px] text-center lg:text-left tracking-tight font-jost text-text-gray leading-[33px]">
-            It is a long established fact that a reader will be distracted by
-            the of readable content of a page when lookings at its layouts the
-            points of using that it has a more-or-less normal.
+          Peşəkar komandamız tərəfindən interyeriniz , ən xırda detalına qədər düşünülür
           </p>
           <div class="flex gap-4 pt-3 items-center">
             <CallIcon />
             <p class="flex flex-col text-text-gray-200 font-jost tracking-tight">
-              <span class="text-2xl font-bold leading-9 ">012345678</span>
-              <span class="text-[22px] leading-8">Call Us Anytime</span>
+              <span class="text-2xl font-bold leading-9 ">050 255 52 00</span>
+              <span class="text-[22px] leading-8">Bizə zəng edin</span>
             </p>
           </div>
-          <Button text="Get Free Estimate" />
+          {/* <Button text="Get Free Estimate" /> */}
+
         </div>
 
         <div>
