@@ -13,3 +13,6 @@ body{
 .bg-about{
     background:url("/aboutpage-bg.png") center/cover;
 }
+.bg-contact{
+    background:url("/contactpage-bg.jpg") center/cover;
+}

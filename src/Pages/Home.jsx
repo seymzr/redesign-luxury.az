@@ -2,7 +2,7 @@ import React from "react";
 import Button from "../components/button.tsx";
 import ArrowSec from "../icons/arrow-sec.tsx";
 import CallIcon from "../icons/call.tsx";
-import Experience from "../components/experience.tsx";
+import Experience from "../components/experience.jsx";
 import Catalogue from "../components/Catalogue.jsx";
 const Home = () => {
   const services = [
@@ -104,8 +104,10 @@ const Home = () => {
   ];
   return (
     <div className="">
-      <section class="w-full bg-hero bg-no-repeat bg-cover h-screen lg:min-h-[110vh] px-12 xl:px-0 flex items-center ">
-        <div class="lg:max-w-[1200px] w-full mx-auto flex flex-col">
+      <section class="w-full bg-hero bg-no-repeat bg-cover h-screen  lg:min-h-[110vh] px-12 xl:px-0 flex items-center ">
+
+        <div class="lg:max-w-[1200px] w-full mx-auto flex flex-col  ">
+          <video src="/intro.mp4" autoPlay={true}></video>
           <h1 class="text-[40px] leading-[50px] md:text-[60px] xl:text-[85px] pb-4 font-dm md:leading-[106.25px] w-full xl:max-w-[50%] text-primary-200">
             {" "}
             Let Your Home Be Unique{" "}
@@ -141,7 +143,7 @@ const Home = () => {
         </div>
 
         <div>
-          <img src="/about-img.png" alt="" />
+          <img src="/about-img.jpg" alt="" className="rounded-tr-[50%] rounded-bl-[30%]" />
         </div>
       </section>
       <section class="lg:max-w-[1200px] px-12 xl:px-0 w-full mx-auto pt-[100px] lg:pt-[200px] ">
@@ -210,7 +212,7 @@ const Home = () => {
       </section>
 
       <section class="w-full bg-primary-300 px-12 xl:px-0 mx-auto mt-[100px] lg:mt-[200px] py-[151px]">
-        <div class="w-full max-w-[1200px] mx-auto flex lg:justify-center items-center overflow-x-scroll no-scrollbar">
+        <div class="w-full max-w-[1200px] mx-auto flex flex-col md:flex-row lg:justify-center items-center overflow-x-scroll no-scrollbar">
           {experiences.map((exp, i) => {
             return (
               <Experience text={exp.text} num={exp.num} i={i} client:load />
