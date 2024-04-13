@@ -2,14 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 body{
-    background: url('../public/Background.jpg') center;
+    background: url('/Background.jpg') center;
 }
 .bg-hero{
-    background: url('../public/banner.png') center/cover fixed;
+    background: url('/banner.png') center/cover fixed;
 }
 .bg-services{
-    background:url('../public/backgroundproject.jpg') center/cover;
+    background:url('/backgroundproject.jpg') center/cover;
 }
 .bg-about{
-    background:url("../public/aboutpage-bg.png") center/cover;
+    background:url("/aboutpage-bg.png") center/cover;
 }

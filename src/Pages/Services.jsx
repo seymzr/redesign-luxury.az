@@ -69,7 +69,7 @@ const Services = () => {
   return (
     <di className="">
       <div className="bg-[url('/backgroundproject.jpg')] bg-center bg-cover px-12">
-                <h1 className="container py-64 text-6xl font-semibold tracking-widest text-white ">OUR PROJECTS</h1>
+                <h1 className="container py-64 text-6xl font-semibold tracking-widest text-white ">OUR SERVICES</h1>
             </div>
 
       <section class="lg:max-w-[1200px] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-10 lg:gap-y-12 xl:px-0 w-full mx-auto pt-[100px] lg:pt-[200px] justify-between ">

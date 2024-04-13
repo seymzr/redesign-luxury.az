@@ -5,6 +5,7 @@ import Services from "./Pages/Services"
 import Navbar from "./components/Navbar"
 import Footer from "./components/Footer"
 import Contact from "./Pages/Contact"
+import Gallery from "./Pages/Gallery"
 
 
 
@@ -19,6 +20,7 @@ function App() {
         <Route path="about"  element={<About />}/>
         <Route path="services"  element={<Services />}/>
         <Route path="contact"  element={<Contact />}/>
+        <Route path="gallery"  element={<Gallery />}/>
       </Routes>
       <Footer />
       <p class="tracking-tight text-base text-center border border-gray-300 bg-white py-10 lg:text-[22px] lg:leading-[33px] font-jost text-text-gray">
