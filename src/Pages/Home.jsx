@@ -104,17 +104,17 @@ const Home = () => {
   ];
   return (
     <div className="">
-      <section class="w-full  h-screen  lg:min-h-[110vh] px-12 xl:px-0 flex items-center ">
-      <div class="w-full mx-auto flex flex-col items-center justify-center bg-black h-full">
-          <h1 class="text-[40px] leading-[50px] md:text-[60px] xl:text-[85px] pb-4 font-dm md:leading-[106.25px] w-full xl:max-w-[50%] text-primary-500">
+      <section class="w-full  h-screen  lg:min-h-[110vh] px-4 md:px-12 xl:px-0 flex flex-col-reverse md:flex-row items-center ">
+      <div class="w-full mx-auto flex flex-col  p-5 items-center justify-center bg-black h-full">
+          <h1 class="text-[40px] leading-[50px] md:text-[60px] xl:text-[85px] pb-4 font-dm md:leading-[106.25px] w-full xl:max-w-[50%] text-primary-100">
             {" "}
             Let Your Home Be Unique{" "}
           </h1>
-          <p class="text-base md:text-[22px] pb-5 font-jost text-text-gray-200 w-full lg:max-w-[50%]">
+          <p class="text-base md:text-[22px] pb-5 font-jost text-primary-400 w-full lg:max-w-[50%]">
             There are many variations of the passages of lorem Ipsum
             fromavailable,variations of the passages.
           </p>
-          <Button text="Get Started" className="self-start"/>
+          <Button text="Get Started" variant="secondary" className="self-start"/>
         </div>
         <div className="bg-hero w-full h-full">
 
