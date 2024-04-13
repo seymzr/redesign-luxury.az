@@ -104,10 +104,9 @@ const Home = () => {
   ];
   return (
     <div className="">
-      <section class="w-full bg-hero bg-no-repeat bg-cover h-screen  lg:min-h-[110vh] px-12 xl:px-0 flex items-center ">
-
-        <div class="lg:max-w-[1200px] w-full mx-auto flex flex-col  ">
-          <h1 class="text-[40px] leading-[50px] md:text-[60px] xl:text-[85px] pb-4 font-dm md:leading-[106.25px] w-full xl:max-w-[50%] text-primary-200">
+      <section class="w-full  h-screen  lg:min-h-[110vh] px-12 xl:px-0 flex items-center ">
+      <div class="w-full mx-auto flex flex-col items-center justify-center bg-black h-full">
+          <h1 class="text-[40px] leading-[50px] md:text-[60px] xl:text-[85px] pb-4 font-dm md:leading-[106.25px] w-full xl:max-w-[50%] text-primary-500">
             {" "}
             Let Your Home Be Unique{" "}
           </h1>
@@ -115,15 +114,16 @@ const Home = () => {
             There are many variations of the passages of lorem Ipsum
             fromavailable,variations of the passages.
           </p>
-          <Button text="Get Started" />
+          <Button text="Get Started" className="self-start"/>
         </div>
+        <div className="bg-hero w-full h-full">
+
+        </div>
+        
       </section>
 
       <Catalogue />
-      <section className="w-full h-screen">
-      <video src="/intro.mp4" width='100%' height='100%' controls autoPlay loop muted playsInline preload='none'  />
-
-      </section>
+      
 
       <section class="w-full lg:max-w-[1200px] mx-auto px-12 xl:px-0 flex flex-col-reverse justify-center items-center lg:grid grid-cols-2 gap-[75px] pt-[100px] lg:pt-[200px]">
         <div class="flex flex-col gap-8 max-w-[472px] items-center lg:items-start py-6">

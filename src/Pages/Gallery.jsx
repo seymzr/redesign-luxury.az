@@ -10,13 +10,13 @@ export default function Gallery() {
 
             <div class="flex flex-col gap-4">
                 <div>
-                    <img class="h-auto max-w-full rounded-lg" src="/badroom.jpg" alt="" />
+                    <img class="h-auto max-w-full rounded-lg" src="/bedroom.jpg" alt="" />
                 </div>
                 <div>
                     <img class="h-auto max-w-full rounded-lg" src="/gallery2.jpg" alt="" />
                 </div>
                 <div>
-                    <img class="h-auto max-w-full rounded-lg" src="/gallery.jpg" alt="" />
+                    <img class="h-auto max-w-full rounded-lg" src="/kitchen1.jpg" alt="" />
                 </div>
             </div>
             <div class="flex flex-col gap-4">
@@ -24,7 +24,7 @@ export default function Gallery() {
                     <img class="h-auto max-w-full rounded-lg" src="/swiper1.jpg" alt="" />
                 </div>
                 <div>
-                    <img class="h-auto max-w-full rounded-lg" src="/gallery11.jpg" alt="" />
+                    <img class="h-auto max-w-full rounded-lg" src="/drowing.jpg" alt="" />
                 </div>
                 <div>
                     <img class="h-auto max-w-full rounded-lg" src="/living.jpg" alt="" />
