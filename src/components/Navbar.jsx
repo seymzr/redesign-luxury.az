@@ -10,7 +10,7 @@ const Navbar = () => {
   const linkStyle = "text-xl leading-6 font-jost text-primary-200";
 
   return (
-    <div className="max-w-[1200px] px-12 xl:px-0 m-auto w-full py-5 flex justify-between items-center">
+    <div className="max-w-[1200px] px-12 xl:px-0 m-auto w-full py-5 flex justify-between items-center z-50">
       <a href="/">
         {" "}
         <Logo />
