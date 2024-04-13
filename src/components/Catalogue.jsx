@@ -7,7 +7,7 @@ export default function Catalogue() {
             id: "01",
             catagory: "BEDROOM SETUP",
             title: "Cossy Bedroom Setup",
-            image: "/badroom.jpg",
+            image: "/bedroom.jpg",
             description: "family drowing room with a clean and comfortable design for your family.",
         },
         {
@@ -18,19 +18,19 @@ export default function Catalogue() {
             description: "family drowing room with a clean and comfortable design for your family.",
         },
         {
-            id: "03",
-            catagory: "DROWING SETUP",
-            title: "Family Drowing Room",
-            image: "/drowing.jpg",
-            description: "family drowing room with a clean and comfortable design for your family.",
-        },
-        {
             id: "04",
             catagory: "LIVING SETUP",
             title: "Clean Family Room",
-            image: "/living.jpg",
+            image: "/livingroom.jpg",
             description: "family drowing room with a clean and comfortable design for your family.",
         },
+        {
+            id: "03",
+            catagory: "BATHROOM SETUP",
+            title: "Bath Room",
+            image: "/drowing.jpg",
+            description: "family bathroom with a clean and comfortable design for your family.",
+        }
     ]
 
     return (
@@ -38,15 +38,15 @@ export default function Catalogue() {
             {items.map((item) => (
                 <div key={item.id} className="relative overflow-hidden group">
                     <div>
-                        <img src={item.image}  alt="" className="w-full " />
+                        <img src={item.image}  alt="" className="w-full h-full" />
                     </div>
-                    <div className="absolute top-0 p-8 m-12 bg-white bg-opacity-60 backdrop-blur">
+                    <div className="absolute top-0 p-8 m-12 bg-white bg-opacity-60 backdrop-blur-sm">
                         <div className="flex justify-between pb-4 ">
                             <p className="text-sm">{item.catagory}</p>
                             <span className="text-sm ">{item.id}</span>
                         </div>
                         <a className="block text-xl font-semibold" href="">{item.title}</a>
-                        <p className="py-4 text-gray-500">{item.description}</p>
+                        <p className="py-4 text-gray-500 drop-shdaow">{item.description}</p>
 
                     </div>
 
