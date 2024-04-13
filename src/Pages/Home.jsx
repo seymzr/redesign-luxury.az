@@ -107,7 +107,7 @@ const Home = () => {
       <section class="w-full bg-hero bg-no-repeat bg-cover h-screen  lg:min-h-[110vh] px-12 xl:px-0 flex items-center ">
 
         <div class="lg:max-w-[1200px] w-full mx-auto flex flex-col  ">
-          <video src="/intro.mp4" autoPlay={true}></video>
+          <video src="/intro.mp4" width='100%' height='100%' controls autoPlay loop muted playsInline preload='none' className="object-cover"></video>
           <h1 class="text-[40px] leading-[50px] md:text-[60px] xl:text-[85px] pb-4 font-dm md:leading-[106.25px] w-full xl:max-w-[50%] text-primary-200">
             {" "}
             Let Your Home Be Unique{" "}
