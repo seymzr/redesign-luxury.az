@@ -180,7 +180,7 @@ const Home = () => {
       <section class="lg:max-w-[1200px] px-12 xl:px-0 w-full mx-auto pt-[100px] lg:pt-[200px] ">
         <div class="w-full flex flex-row justify-between items-center gap-12 max-w-[1200px] overflow-x-scroll no-scrollbar">
           {clientLogos.map((logo) => (
-            <img src={logo.img} alt="" />
+            <img src={logo.img} alt={logo.img} />
           ))}
         </div>
       </section>
