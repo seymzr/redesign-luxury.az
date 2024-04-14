@@ -105,49 +105,52 @@ const Home = () => {
   return (
     <div className="">
       <section class="w-full  h-screen  lg:min-h-[110vh] px-4 md:px-12 xl:px-0 flex flex-col-reverse md:flex-row items-center ">
-      <div class="w-full mx-auto flex flex-col  p-5 items-center justify-center bg-primary-200 h-full">
+        <div class="w-full mx-auto flex flex-col  p-5 items-center justify-center bg-primary-200 h-full">
           <h1 class="text-[40px] leading-[50px] md:text-[60px] xl:text-[85px] pb-4 font-dm md:leading-[106.25px] w-full xl:max-w-[70%] text-primary-100">
             {" "}
             {/* Let Your Home Be Unique */}Eviniz Özəl Olsun{" "}
           </h1>
           <p class=" md:text-[22px] pb-5 font-jost text-primary-400 w-full lg:max-w-[70%]">
-          Evinizin fərqli interyerə sahib olmağını istəyirsizsə Redesign Luxury komandasına müraciət edə bilərsiz
+            Evinizin fərqli interyerə sahib olmağını istəyirsizsə Redesign
+            Luxury komandasına müraciət edə bilərsiz
           </p>
           {/* <Button text="Get Started" variant="secondary" className="self-start"/> */}
         </div>
-        <div className="bg-hero w-full h-full">
-
-        </div>
-        
+        <div className="bg-hero w-full h-full"></div>
       </section>
 
       <Catalogue />
-      
 
       <section class="w-full lg:max-w-[1200px] mx-auto px-12 xl:px-0 flex flex-col-reverse justify-center items-center lg:grid grid-cols-2 gap-[75px] pt-[100px] lg:pt-[200px]">
         <div class="flex flex-col gap-8 max-w-[472px] items-center lg:items-start py-6">
           <h2 class="text-[30px] text-center capitalize lg:text-left font-dm tracking-wide leading-8 md:leading-[62.50px] md:text-[50px] text-text-blue ">
-          Minimalist toxunuşlarla maksimum rahatlıq
+            Minimalist toxunuşlarla maksimum rahatlıq
           </h2>
           <p class="text-base md:text-[22px] text-center lg:text-left tracking-tight font-jost text-text-gray leading-[33px]">
-          Peşəkar komandamız tərəfindən interyeriniz , ən xırda detalına qədər düşünülür
+            Peşəkar komandamız tərəfindən interyeriniz , ən xırda detalına qədər
+            düşünülür
           </p>
           <div class="flex gap-4 pt-3 items-center">
-            <a href="tel:+994502555200"><CallIcon /></a>
+            <a href="tel:+994502555200">
+              <CallIcon />
+            </a>
             <p class="flex flex-col text-text-gray-200 font-jost tracking-tight">
               <span class="text-2xl font-bold leading-9 ">050 255 52 00</span>
               <span class="text-[22px] leading-8">Bizə zəng edin</span>
             </p>
           </div>
           {/* <Button text="Get Free Estimate" /> */}
-
         </div>
 
         <div>
-          <img src="/about-img.jpg" alt="" className="rounded-tr-[50%] rounded-bl-[30%]" />
+          <img
+            src="/about-img.jpg"
+            alt=""
+            className="rounded-tr-[50%] rounded-bl-[30%]"
+          />
         </div>
       </section>
-      <section class="lg:max-w-[1200px] px-12 xl:px-0 w-full mx-auto pt-[100px] lg:pt-[200px] ">
+      {/* <section class="lg:max-w-[1200px] px-12 xl:px-0 w-full mx-auto pt-[100px] lg:pt-[200px] ">
         <div class="w-full flex flex-col bg-primary-300 rounded-[48px] px-6 py-[88px]">
           <h2 class="font-dm tracking-wide text-center leading-[37px] lg:leading-[62.50px] text-[30px] lg:text-[50px] w-full lg:max-w-[50%] pb-9 mx-auto">
             What the People Thinks About Us
@@ -174,6 +177,39 @@ const Home = () => {
               );
             })}
           </div>
+        </div>
+      </section> */}
+      <section className="w-full pt-[100px] lg:pt-[150px] px-12 lg:px-0 mx-auto lg:max-w-[1200px] ">
+        <div className="w-full flex flex-col-reverse lg:flex-row justify-between gap-10 items-center">
+          <div className="flex flex-col gap-6">
+            <h2 className="text-[30px] text-center lg:text-left font-dm tracking-wide capitalize leading-8 md:leading-[62.50px] md:text-[50px] text-text-blue ">
+              We what we do
+            </h2>
+            <p className="text-base md:text-[22px] lg:max-w-[85%] text-center lg:text-left tracking-tight font-jost text-text-gray leading-[33px]">
+              It is a long established fact that a reader will be distracted by
+              the of readable content of a page when lookings at its layouts the
+              points of using that it has a more-or-less normal.
+            </p>
+          </div>
+          <div className="relative w-fit">
+          <img src="/bedroom.jpg" alt="" className="  z-10" />
+          <img src="/rectangle.svg" alt="rectangle" className="w-36 absolute -top-6 -left-6 z-0" />
+          </div>
+        </div>
+      </section>
+      <section className="w-full pt-[100px] lg:pt-[150px] px-12 lg:px-0 mx-auto lg:max-w-[1200px] ">
+        <div className="w-full flex flex-col-reverse lg:flex-row-reverse justify-between gap-24 items-center">
+          <div className="flex flex-col gap-6">
+            <h2 className="text-[30px] text-center lg:text-left font-dm tracking-wide capitalize leading-8 md:leading-[62.50px] md:text-[50px] text-text-blue ">
+              The End Result
+            </h2>
+            <p className="text-base md:text-[22px] lg:max-w-[95%] text-center lg:text-left tracking-tight font-jost text-text-gray leading-[33px]">
+              It is a long established fact that a reader will be distracted by
+              the of readable content of a page when lookings at its layouts the
+              points of using that it has a more-or-less normal.
+            </p>
+          </div>
+          <img src="/about2.png" alt="" />
         </div>
       </section>
 
