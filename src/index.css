@@ -3,6 +3,7 @@
 @tailwind utilities;
 body{
     background: url('/Background.jpg') center;
+
 }
 .bg-hero{
     background: url('/hero.jpg') center/cover ;

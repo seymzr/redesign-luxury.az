@@ -45,22 +45,22 @@ const Home = () => {
 
   const projects = [
     {
-      img: "/project2.png",
+      img: "/bedroomproject.jpg",
       name: "Modern Bedroom",
       text: "Decor / Artchitecture",
     },
     {
-      img: "/project1.png",
+      img: "/kitchen.jpg",
       name: "Modern Kitchen",
       text: "Decor / Artchitecture",
     },
     {
-      img: "/project4.png",
+      img: "/living.jpg",
       name: "Modern Living Room",
       text: "Decor / Artchitecture",
     },
     {
-      img: "/project3.png",
+      img: "/dining.jpg",
       name: "Modern Dining Hall",
       text: "Decor / Artchitecture",
     },
@@ -187,7 +187,7 @@ const Home = () => {
 
       <section class="lg:max-w-[1200px] px-12 xl:px-0 w-full mx-auto pt-[100px] lg:pt-[200px] ">
         <h2 class="font-dm tracking-wide text-center leading-[37px] lg:leading-[62.50px] text-[30px] lg:text-[50px] w-full lg:max-w-[50%] pb-2 mx-auto">
-          Follow Our Projects
+          Bizim Proyektlərimiz
         </h2>
         <p class="text-base md:text-[22px] text-center tracking-tight font-jost text-text-gray leading-[33px] lg:max-w-[60%] mx-auto">
           It is a long established fact that a reader will be distracted by the

@@ -11,29 +11,20 @@ import ServiceIconFour from "../icons/service4-icon.tsx";
 const Services = () => {
   const services = [
     {
-      title: "Project Plan",
-      text: "There are many variations of the passages of lorem Ipsum from available, majority.",
+      icon:'/landschaft.png',
+      title: "Landşaft Dizaynı",
+      text: "Landşaft dizaynı, ərazinin peyzaj və təbii mühitini planlaşdırmaq, inkişaf etdirmək və tərtib etmək məqsədilə icra edilən bir sahədir.",
     },
     {
-      title: "Interior Work",
-      text: "There are many variations of the passages of lorem Ipsum from available, majority.",
+      icon:'/exterior.png',
+      title: "Eksteryer Dizayn",
+      text: "Eksteryer dizayn, bir binanın və ya mülkün ərazisinin xarici görünüşünü, tərtibatını və düzəlməsini planlaşdırmaq, inkişaf etdirmək və təşkil etmək məqsədilə icra olunur",
     },
     {
-      title: "Realization",
-      text: "There are many variations of the passages of lorem Ipsum from available, majority.",
-    },
-    {
-      title: "2d/3d Art Work",
-      text: "There are many variations of the passages of lorem Ipsum from available, majority.",
-    },
-    {
-      title: "Retail design",
-      text: "There are many variations of the passages of lorem Ipsum from available, majority.",
-    },
-    {
-      title: "Decoration Work",
-      text: "There are many variations of the passages of lorem Ipsum from available, majority.",
-    },
+      icon:'/interior.png',
+      title: "İnteryer Dizayn",
+      text: "İnteryer dizaynı, müştərinin tələblərini və mekanın funksional tələblərini örtüşdürən gözəl və praktik iç mekanlar yaratmağa nail olmaq məqsədilə işləyən bir sahədir.",
+    }
   ];
 
   const howWeWorkDetails = [
@@ -75,7 +66,8 @@ const Services = () => {
       <section class="lg:max-w-[1200px] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-10 lg:gap-y-12 xl:px-0 w-full mx-auto pt-[100px] lg:pt-[200px] justify-between ">
         {services.map((service) => {
           return (
-            <div class="w-full col-span-1 max-w-[358px] mx-auto flex rounded-[30px] hover:bg-primary-300 px-5 py-[83px] flex-col justify-center items-center gap-3 md:gap-5">
+            <div class="w-full col-span-1 max-w-[358px] mx-auto flex rounded-[30px] bg-primary-300/50 px-5 py-[83px] flex-col justify-center items-center gap-3 md:gap-5">
+              <img src={service.icon} alt="" />
               <h3 class="text-text-blue font-dm text-[22px] md:text-[25px] leading-loose">
                 {service.title}
               </h3>
