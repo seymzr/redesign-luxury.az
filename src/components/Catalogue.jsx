@@ -45,7 +45,7 @@ export default function Catalogue() {
                             <p className="text-sm">{item.catagory}</p>
                             <span className="text-sm ">{item.id}</span>
                         </div>
-                        <a className="block text-xl font-semibold" href="">{item.title}</a>
+                        <p className="block text-xl font-semibold" href="">{item.title}</p>
                         <p className="py-4 text-gray-500 drop-shdaow">{item.description}</p>
 
                     </div>

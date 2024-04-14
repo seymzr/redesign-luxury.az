@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import Facebook from "../icons/facebook.tsx";
 import Instagram from "../icons/instagram.tsx";
 import LinkedIn from "../icons/linkedin.tsx";
@@ -10,9 +11,9 @@ const Footer = () => {
       <div className="w-full max-w-[1200px] px-12 xl:px-0 mx-auto pb-[135px] grid grid-cols-1 lg:grid-cols-5 md:grid-cols-2 gap-6">
         {/* start */}
         <div className="col-span-1 md:col-span-2">
-          <a href="/" className="">
+          <Link href="/" className="">
             <Logo />
-          </a>
+          </Link>
           <p className="tracking-tight text-base lg:text-[22px] lg:leading-[33px] font-jost text-text-gray pt-[18px] pb-[33px]">
          Estetika və funksiyanın qovuşduğu yer
           </p>
@@ -36,45 +37,28 @@ const Footer = () => {
             Pages
           </p>
           <div className="flex flex-col gap-6">
-            <a
-              href="/about"
-              className="tracking-tight text-base lg:text-[22px] lg:leading-[33px] font-jost text-text-gray"
-            >
-              About Us
-            </a>
-            <a
+            
+            <Link
               href="/services"
               className="tracking-tight text-base lg:text-[22px] lg:leading-[33px] font-jost text-text-gray"
             >
               Services
-            </a>
-            <a
+            </Link>
+            <Link
+              href="/about"
+              className="tracking-tight text-base lg:text-[22px] lg:leading-[33px] font-jost text-text-gray"
+            >
+              Gallery
+            </Link>
+            <Link
               href="/contact"
               className="tracking-tight text-base lg:text-[22px] lg:leading-[33px] font-jost text-text-gray"
             >
               Contact Us
-            </a>
+            </Link>
           </div>
         </div>
-        <div className="col-span-1 flex flex-col gap-4">
-          <p className="text-primary-200 font-dm text-[22px] lg:text-[25px] leading-loose">
-            Services
-          </p>
-          <div className="flex flex-col gap-6">
-            <p className="tracking-tight text-base lg:text-[22px] lg:leading-[33px] font-jost text-text-gray">
-              Kitchen
-            </p>
-            <p className="tracking-tight text-base lg:text-[22px] lg:leading-[33px] font-jost text-text-gray">
-              Living Room
-            </p>
-            <p className="tracking-tight text-base lg:text-[22px] lg:leading-[33px] font-jost text-text-gray">
-              Dining Hall
-            </p>
-            <p className="tracking-tight text-base lg:text-[22px] lg:leading-[33px] font-jost text-text-gray">
-              Bedroom
-            </p>
-          </div>
-        </div>
+        <div></div>
         <div className="col-span-1 flex flex-col gap-4">
           <p className="text-primary-200 font-dm text-[22px] lg:text-[25px] leading-loose">
             Contact
