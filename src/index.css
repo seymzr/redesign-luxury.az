@@ -15,10 +15,11 @@ body{
     background:url("/aboutpage-bg.png") center/cover;
 }
 .bg-contact{
-    background:linear-gradient(rgba(0,0,0,0.2),rgba(0, 0, 0, 0.796)),url("/contactpage-bg.jpg") center/cover fixed;
+    background:linear-gradient(rgba(0, 0, 0, 0),rgba(0, 0, 0, 0)),url("/bg.png") center/cover ;
 }
 video {
     width: 100%;
     background-repeat: no-repeat;
     object-fit: cover;
 }
+
