@@ -6,6 +6,7 @@ import Experience from "../components/experience.jsx";
 import Catalogue from "../components/Catalogue.jsx";
 import { Link } from "react-router-dom";
 import ArrowPri from "../icons/arrow-pri.tsx";
+import PartnersSwiper from "../components/PartnersSwiper.jsx";
 const Home = () => {
   const services = [
     {
@@ -227,6 +228,7 @@ const Home = () => {
           </div>
         </div>
       </section>
+      <PartnersSwiper images={clientLogos} />
 
       <section class="lg:max-w-[1200px] px-12 xl:px-0 w-full mx-auto pt-[100px] lg:pt-[200px] ">
         <div class="w-full flex flex-row justify-between items-center gap-12 max-w-[1200px] overflow-x-scroll no-scrollbar">

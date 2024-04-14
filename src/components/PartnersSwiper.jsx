@@ -1,16 +1,15 @@
-"use client";
-import Image from "next/image";
+
 import { TbArrowUpRight } from "react-icons/tb";
 import 'swiper/css';
 import { Autoplay } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 
-export default function PartnersSwiper() {
+export default function PartnersSwiper({images}) {
 
     return (
-        <div className="py-8 lg:py-28">
-            <div className="container grid pb-8 lg:grid-cols-2">
+        <div className="w-full pt-[100px] lg:pt-[150px] px-12 lg:px-0 mx-auto lg:max-w-[1200px] ">
+            {/* <div className="container grid pb-8 lg:grid-cols-2">
                 <div className="text-left ">
                     <h1 className="py-4 text-4xl font-medium lg:text-6xl lg:py-0">Modern Classic</h1>
                 </div>
@@ -30,7 +29,7 @@ export default function PartnersSwiper() {
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> */}
 
             <Swiper
                 slidesPerView={1}
@@ -48,21 +47,12 @@ export default function PartnersSwiper() {
                 modules={[Autoplay]}
 
             >
-                <SwiperSlide>
-                    <Image src="/image/swiper1.jpg" alt="LOGO" width={520} height={220} className="w-full" />
+                {images.map((img,index)=>(
+                    <SwiperSlide>
+                    <img src={img.img} alt="partner" />
                 </SwiperSlide>
-                <SwiperSlide>
-                    <Image src="/image/swiper2.jpg" alt="LOGO" width={520} height={220} className="w-full" />
-                </SwiperSlide>
-                <SwiperSlide>
-                    <Image src="/image/swiper3.jpg" alt="LOGO" width={520} height={220} className="w-full" />
-                </SwiperSlide>
-                <SwiperSlide>
-                    <Image src="/image/swiper4.jpg" alt="LOGO" width={520} height={220} className="w-full" />
-                </SwiperSlide>
-                <SwiperSlide>
-                    <Image src="/image/swiper5.jpg" alt="LOGO" width={520} height={220} className="w-full" />
-                </SwiperSlide>
+                ))}
+                
             </Swiper>
         </div>
     )
