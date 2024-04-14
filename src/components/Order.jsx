@@ -138,7 +138,7 @@ const Order = () => {
               Ad
             </label>
             <input
-              className=" duration-300 border border-solid border-yellow-500 p-2  focus:outline-none focus:border-yellow-400"
+              className=" duration-300 border border-solid border-primary-100 p-2  focus:outline-none focus:border-primary-100/90"
               id="name"
               type="text"
               placeholder="Ad"
@@ -149,7 +149,7 @@ const Order = () => {
               Soyad
             </label>
             <input
-              className=" duration-300 border border-solid border-yellow-500 p-2  focus:outline-none focus:border-yellow-400"
+              className=" duration-300 border border-solid border-primary-100 p-2  focus:outline-none focus:border-primary-100/90"
               id="surname"
               type="text"
               placeholder="Soyad"
@@ -160,7 +160,7 @@ const Order = () => {
               Əlaqə Nömrəsi
             </label>
             <input
-              className=" duration-300 border border-solid border-yellow-500 p-2  focus:outline-none focus:border-yellow-400"
+              className=" duration-300 border border-solid border-primary-100 p-2  focus:outline-none focus:border-primary-100/90"
               id="phoneNumber"
               type="text"
               placeholder="+994xxxxxxxxx"
@@ -175,7 +175,7 @@ const Order = () => {
               Email
             </label>
             <input
-              className=" duration-300 border border-solid border-yellow-500 p-2  focus:outline-none focus:border-yellow-400"
+              className=" duration-300 border border-solid border-primary-100 p-2  focus:outline-none focus:border-primary-100/90"
               id="email"
               type="email"
               placeholder="example@gmail.com"
@@ -186,7 +186,7 @@ const Order = () => {
               Mənzil Adresi
             </label>
             <input
-              className=" duration-300 border border-solid border-yellow-500 p-2  focus:outline-none focus:border-yellow-400"
+              className=" duration-300 border border-solid border-primary-100 p-2  focus:outline-none focus:border-primary-100/90"
               id="address"
               type="text"
               placeholder=""
@@ -197,7 +197,7 @@ const Order = () => {
               Mənzil Ölçüsü
             </label>
             <input
-              className=" duration-300 border border-solid border-yellow-500 p-2  focus:outline-none focus:border-yellow-400"
+              className=" duration-300 border border-solid border-primary-100 p-2  focus:outline-none focus:border-primary-100/90"
               id="size"
               type="number"
               min={1}
@@ -209,7 +209,7 @@ const Order = () => {
               Otaq sayı
             </label>
             <input
-              className=" duration-300 border border-solid border-yellow-500 p-2  focus:outline-none focus:border-yellow-400"
+              className=" duration-300 border border-solid border-primary-100 p-2  focus:outline-none focus:border-primary-100/90"
               id="roomCount"
               type="number"
               min={1}
@@ -222,7 +222,7 @@ const Order = () => {
             </label>
             <input
               list="designs"
-              className=" duration-300 border border-solid border-yellow-500 p-2 focus:outline-none focus:border-yellow-400"
+              className=" duration-300 border border-solid border-primary-100 p-2 focus:outline-none focus:border-primary-100/90"
               id="design"
               type="text"
               placeholder="Seçin..."
@@ -241,7 +241,7 @@ const Order = () => {
             </label>
 
             <select
-              className=" duration-300 border border-solid border-yellow-500 p-2 focus:outline-none focus:border-yellow-400 pr-5"
+              className=" duration-300 border border-solid border-primary-100 p-2 focus:outline-none focus:border-primary-100/90 pr-5"
               onChange={handleOptionSelect}
               id="rooms"
             >
@@ -312,7 +312,7 @@ const Order = () => {
             </label>
 
             <select
-              className=" duration-300 border border-solid border-yellow-500 p-2 focus:outline-none focus:border-yellow-400 pr-5"
+              className=" duration-300 border border-solid border-primary-100 p-2 focus:outline-none focus:border-primary-100/90 pr-5"
               id="infoFrequency"
             >
               <option  disabled value={null}>
@@ -331,7 +331,7 @@ const Order = () => {
             </label>
 
             <input
-              className="bg-white/50 duration-300 border border-solid border-yellow-500 p-2 focus:outline-none focus:border-yellow-400 "
+              className="bg-white/50 duration-300 border border-solid border-primary-100 p-2 focus:outline-none focus:border-primary-100/90 "
               type="date"
               name=""
               id="deadline"
@@ -343,12 +343,12 @@ const Order = () => {
               Əlavə qeydlər
             </label>
 
-            <textarea id="additionalNotes" rows="10" placeholder="Qeyd edin..." className=" duration-300 border border-solid border-yellow-500 p-2 focus:outline-none focus:border-yellow-400 ">
+            <textarea id="additionalNotes" rows="10" placeholder="Qeyd edin..." className=" duration-300 border border-solid border-primary-100 p-2 focus:outline-none focus:border-primary-100/90 ">
 
             </textarea>
           </div>
 
-          <button onClick={sendEmail} className="bg-yellow-500 p-3 w-48 border border-solid border-yellow-500 text-black font-medium duration-300 hover:text-yellow-500 hover:bg-white">Göndər</button>
+          <button onClick={sendEmail} className="bg-primary-100 p-3 w-48 border border-solid border-primary-100 text-white font-medium duration-300 hover:text-primary-100 hover:bg-white">Göndər</button>
         </div>
       </div>
     </div>

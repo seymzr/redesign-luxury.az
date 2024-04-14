@@ -16,7 +16,7 @@ const Footer = () => {
           <p className="tracking-tight text-base lg:text-[22px] lg:leading-[33px] font-jost text-text-gray pt-[18px] pb-[33px]">
          Estetika və funksiyanın qovuşduğu yer
           </p>
-          <div className="flex gap-5 md:gap-[54px]">
+          <div className="flex items-center gap-5 md:gap-[54px]">
             <a href="/">
               <Facebook />
             </a>
