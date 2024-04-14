@@ -191,7 +191,7 @@ const Home = () => {
             <p className="text-base md:text-[22px] lg:max-w-[85%] text-center lg:text-left tracking-tight font-jost text-text-gray leading-[33px]">
               Biz müştərilərimizin arzularını gerçəkləşdirmək üçün buradayıq.
               Redesignluxury interyerdə yaradıcılıq və funksionallığın mükəmməl
-              birləşməsini təklif edən daxili dizayn şirkətidir.
+              birləşməsini təklif edən interyer dizayn şirkətidir.
             </p>
           </div>
           <div className="relative w-fit">
@@ -222,7 +222,7 @@ const Home = () => {
             <img
               src="/rectangle.svg"
               alt="rectangle"
-              className="w-36 absolute -top-6 -right-6 -z-10"
+              className="w-48 absolute -top-8 -right-8 -z-10"
             />
           </div>
         </div>
