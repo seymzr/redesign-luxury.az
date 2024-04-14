@@ -5,6 +5,7 @@ import CallIcon from "../icons/call.tsx";
 import Experience from "../components/experience.jsx";
 import Catalogue from "../components/Catalogue.jsx";
 import { Link } from "react-router-dom";
+import ArrowPri from "../icons/arrow-pri.tsx";
 const Home = () => {
   const services = [
     {
@@ -259,8 +260,9 @@ const Home = () => {
               </div>
             );
           })}
-          <Link>Daha çox <ArrowSec /></Link>
         </div>
+        <Link to='/gallery' className="bg-primary-300 mx-auto text-primary-200 hover:text-white hover:bg-primary-100 rounded-[18px] flex capitalize items-center justify-center gap-[9px] w-fit duration-300  text-base lg:text-lg font-semibold font-['Jost'] leading-snug tracking-tight px-10 py-5 md:px-[54px] md:py-[16px] my-12">Daha çox <ArrowPri /></Link>
+
       </section>
 
       <section class="w-full bg-primary-300 px-12 xl:px-0 mx-auto mt-[100px] lg:mt-[200px] py-[151px]">
