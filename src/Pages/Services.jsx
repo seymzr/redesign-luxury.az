@@ -65,15 +65,15 @@ const Services = () => {
         </h1>
       </div>
 
-      <section class="lg:max-w-[1200px] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-10 lg:gap-y-12 xl:px-0 w-full mx-auto pt-[100px] lg:pt-[200px] justify-between ">
+      <section className="lg:max-w-[1200px] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-10 lg:gap-y-12 xl:px-0 w-full mx-auto pt-[100px] lg:pt-[200px] justify-between ">
         {services.map((service) => {
           return (
-            <div class="w-full col-span-1 max-w-[358px] mx-auto flex rounded-[30px] bg-primary-300/50 px-5 py-[83px] flex-col justify-center items-center gap-3 md:gap-5">
+            <div className="w-full col-span-1 max-w-[358px] mx-auto flex rounded-[30px] bg-primary-300/50 px-5 py-[83px] flex-col justify-center items-center gap-3 md:gap-5">
               <img src={service.icon} alt="" />
-              <h3 class="text-text-blue font-dm text-[22px] md:text-[25px] leading-loose">
+              <h3 className="text-text-blue font-dm text-[22px] md:text-[25px] leading-loose">
                 {service.title}
               </h3>
-              <p class="text-base md:text-[22px] tracking-tight font-jost text-text-gray leading-[33px] text-center">
+              <p className="text-base md:text-[22px] tracking-tight font-jost text-text-gray leading-[33px] text-center">
                 {" "}
                 {service.text}
               </p>
@@ -82,17 +82,17 @@ const Services = () => {
         })}
       </section>
 
-      <section class="px-12 xl:px-0 w-full mt-[100px] lg:mt-[200px] min-h-screen ">
-        <div class="w-full lg:max-w-[1200px] p-12 mx-auto lg:px-[116px] lg:py-[160px] bg-primary-300 rounded-[70px] ">
-          <h2 class="font-dm tracking-wide text-center leading-[37px] lg:leading-[62.50px] text-[30px] lg:text-[50px] w-full capitalize lg:max-w-[50%] pb-2 mx-auto">
+      <section className="px-12 xl:px-0 w-full mt-[100px] lg:mt-[200px] min-h-screen ">
+        <div className="w-full lg:max-w-[1200px] p-12 mx-auto lg:px-[116px] lg:py-[160px] bg-primary-300 rounded-[70px] ">
+          <h2 className="font-dm tracking-wide text-center leading-[37px] lg:leading-[62.50px] text-[30px] lg:text-[50px] w-full capitalize lg:max-w-[50%] pb-2 mx-auto">
             How We Work
           </h2>
-          <p class="text-base md:text-[22px] text-center tracking-tight font-jost text-text-gray leading-[33px] lg:max-w-[60%] mx-auto">
+          <p className="text-base md:text-[22px] text-center tracking-tight font-jost text-text-gray leading-[33px] lg:max-w-[60%] mx-auto">
             It is a long established fact that a reader will be distracted by
             the of readable content of page lookings at its layouts points.
           </p>
 
-          <div class="pt-[70px] lg:pt-[100px] flex flex-col gap-[70px] ">
+          <div className="pt-[70px] lg:pt-[100px] flex flex-col gap-[70px] ">
             {howWeWorkDetails.map((detail, index) => {
               const ImageIcon = detail.imgIcon;
               const NumberIcon = detail.numIcon;
@@ -101,18 +101,18 @@ const Services = () => {
               } gap-[50px] items-center max-w-[967px]`;
 
               return (
-                <div class={className}>
+                <div className={className}>
                   <img src={detail.img} alt="" />
-                  <div class="flex flex-col gap-12 lg:gap-[58px]">
-                    <div class="justify-between hidden lg:flex">
+                  <div className="flex flex-col gap-12 lg:gap-[58px]">
+                    <div className="justify-between hidden lg:flex">
                       <ImageIcon />
                       <NumberIcon />
                     </div>
-                    <div class="flex flex-col gap-3">
-                      <h3 class="text-text-blue font-dm text-[22px] md:text-[25px] leading-loose">
+                    <div className="flex flex-col gap-3">
+                      <h3 className="text-text-blue font-dm text-[22px] md:text-[25px] leading-loose">
                         {detail.title}
                       </h3>
-                      <p class="text-base md:text-[22px] tracking-tight font-jost text-text-gray leading-[33px]">
+                      <p className="text-base md:text-[22px] tracking-tight font-jost text-text-gray leading-[33px]">
                         {detail.info}
                       </p>
                     </div>
