@@ -32,7 +32,9 @@ export default function PartnersSwiper({images}) {
             </div> */}
 
             <Swiper
-                slidesPerView={1}
+                slidesPerView={2}
+                loop={true}
+                centeredSlides={true}
                 breakpoints={{
                     640: {
                         slidesPerView: 2,
@@ -49,7 +51,9 @@ export default function PartnersSwiper({images}) {
             >
                 {images.map((img,index)=>(
                     <SwiperSlide>
+                    <div className="flex items-center justify-center w-full h-full">
                     <img src={img.img} alt="partner" />
+                    </div>
                 </SwiperSlide>
                 ))}
                 
