@@ -135,7 +135,7 @@ const Home = () => {
             düşünülür
           </p>
           <div className="flex gap-4 pt-3 items-center">
-            <a href="tel:+994502555200">
+            <a aria-label="link to redesign luxury telephone number" href="tel:+994502555200">
               <CallIcon />
             </a>
             <p className="flex flex-col text-text-gray-200 font-jost tracking-tight">
