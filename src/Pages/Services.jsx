@@ -59,7 +59,7 @@ const Services = () => {
   ];
   return (
     <di className="">
-      <div className="bg-[url('/backgroundproject.jpg')] bg-center bg-cover px-12">
+      <div className="bg-services px-12">
         <h1 className="container py-64 text-6xl font-semibold tracking-widest text-white ">
           OUR SERVICES
         </h1>

@@ -9,13 +9,13 @@ body{
     background: url('/hero.jpg') center/cover ;
 }
 .bg-services{
-    background:url('/backgroundproject.jpg') center/cover;
+    background:linear-gradient(rgba(0,0,0,0.2),rgba(0, 0, 0, 0.796)),url('/backgroundproject.jpg') center/cover;
 }
 .bg-about{
     background:url("/aboutpage-bg.png") center/cover;
 }
 .bg-contact{
-    background:url("/contactpage-bg.jpg") center/cover;
+    background:linear-gradient(rgba(0,0,0,0.2),rgba(0, 0, 0, 0.796)),url("/contactpage-bg.jpg") center/cover fixed;
 }
 video {
     width: 100%;

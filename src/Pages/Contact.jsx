@@ -5,7 +5,7 @@ import Order from "../components/Order.jsx";
 const Contact = () => {
   return (
     <div>
-      <div className="bg-contact bg-center bg-cover bg-fixed px-12">
+      <div className="bg-contact  px-12">
         <h1 className="container py-64 text-6xl uppercase font-semibold tracking-widest text-white ">
           Bizimlə Əlaqə
         </h1>
