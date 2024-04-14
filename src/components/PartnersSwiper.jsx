@@ -50,7 +50,7 @@ export default function PartnersSwiper({images}) {
 
             >
                 {images.map((img,index)=>(
-                    <SwiperSlide>
+                    <SwiperSlide key={index}>
                     <div className="flex items-center justify-center w-full h-full">
                     <img src={img.img} alt="partner" />
                     </div>
