@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Logo from "../icons/logo.tsx";
 import useMediaQuery from "../utils/useMediaQuery.ts";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [toggled, setToggled] = useState(false);
@@ -11,29 +12,26 @@ const Navbar = () => {
 
   return (
     <div className="max-w-[1200px] px-12 xl:px-0 m-auto w-full py-5 flex justify-between items-center z-50">
-      <a href="/">
+      <Link to="/">
         {" "}
         <Logo />
-      </a>
+      </Link>
 
       {/* Nav List for Desktop */}
       {matches && (
         <nav className="flex flex-row items-center gap-6">
-          <a href="/" className={linkStyle}>
+          <Link to="/" className={linkStyle}>
             Ana Səhifə
-          </a>
-          <a href="/about" className={linkStyle}>
-            Haqqımızda
-          </a>
-          <a href="/services" className={linkStyle}>
+          </Link>
+          <Link to="/services" className={linkStyle}>
             Xidmətlər
-          </a>
-          <a href="/gallery" className={linkStyle}>
+          </Link>
+          <Link to="/gallery" className={linkStyle}>
             Qalereya
-          </a>
-          <a href="/contact" className={linkStyle}>
+          </Link>
+          <Link to="/contact" className={linkStyle}>
             Əlaqə
-          </a>
+          </Link>
           <select name="" id="" className="text-lg focus:outline-none font-medium leading-6 font-jost text-primary-200">
             <option value="az">AZE</option>
             <option value="en">ENG</option>
@@ -72,21 +70,18 @@ const Navbar = () => {
           animate={{ opacity: 1, x: 0 }}
           className="flex flex-col fixed h-screen bg-white w-[75%] md:w-[90%] text-black bottom-0 left-0 gap-6 items-center justify-center"
         >
-          <a href="/" className={linkStyle}>
+          <Link to="/" className={linkStyle}>
             Ana Səhifə
-          </a>
-          <a href="/about" className={linkStyle}>
-            Haqqımızda
-          </a>
-          <a href="/services" className={linkStyle}>
+          </Link>
+          <Link to="/services" className={linkStyle}>
             Xidmətlər
-          </a>
-          <a href="/gallery" className={linkStyle}>
+          </Link>
+          <Link to="/gallery" className={linkStyle}>
             Qalereya
-          </a>
-          <a href="/contact" className={linkStyle}>
+          </Link>
+          <Link to="/contact" className={linkStyle}>
             Əlaqə
-          </a>
+          </Link>
           <select name="" id="" className="text-lg focus:outline-none leading-6 font-jost text-primary-200">
             <option value="az">AZE</option>
             <option value="en">ENG</option>

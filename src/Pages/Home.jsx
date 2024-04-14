@@ -259,7 +259,7 @@ const Home = () => {
               </div>
             );
           })}
-          <Link>Daha çox</Link>
+          <Link>Daha çox <ArrowSec /></Link>
         </div>
       </section>
 
