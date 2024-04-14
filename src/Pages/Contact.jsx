@@ -5,17 +5,11 @@ import Order from "../components/Order.jsx";
 const Contact = () => {
   return (
     <div>
-      <section class="w-full bg-contact h-[50vh] flex justify-center items-end">
-        <div class="py-[30px] lg:py-[41px] px-[60px] lg:px-[152px] flex flex-col justify-center items-center bg-white rounded-tl-[37px] rounded-tr-[37px] gap-2.5">
-          <h1 class="text-[30px] leading-[40px] lg:text-[50px] lg:leading-[62px] font-dm capitalize text-primary-200 ">
-            Contact Us
-          </h1>
-          <p class="text-base lg:text-[22px] lg:leading-[33px] tracking-tight font-jost text-text-gray">
-            {" "}
-            <a href="/">Home</a> / Contact
-          </p>
-        </div>
-      </section>
+      <div className="bg-contact bg-center bg-cover bg-fixed px-12">
+        <h1 className="container py-64 text-6xl uppercase font-semibold tracking-widest text-white ">
+          Bizimlə Əlaqə
+        </h1>
+      </div>
 
       <section class="lg:max-w-[1200px] flex flex-col gap-8 lg:gap-10 px-12 xl:px-0 w-full mx-auto pt-[100px] lg:pt-[200px]">
         <h2 class="text-[30px] text-center  font-dm tracking-wide lg:max-w-[60%] leading-8 md:leading-[62.50px] md:text-[50px] mx-auto text-text-blue ">
