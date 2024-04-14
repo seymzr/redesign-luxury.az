@@ -89,6 +89,7 @@ const Home = () => {
     {
       num: 12,
       text: "Years Of Experiance",
+      plus:true
     },
     {
       num: 85,
@@ -193,7 +194,7 @@ const Home = () => {
             </p>
           </div>
           <div className="relative w-fit">
-            <img src="/bedroom.jpg" alt="" className="  z-10" />
+            <img src="/gallery.jpg" alt="" className="  z-10" />
             <img
               src="/rectangle.svg"
               alt="rectangle"
@@ -266,7 +267,7 @@ const Home = () => {
         <div class="w-full max-w-[1200px] mx-auto flex flex-col md:flex-row lg:justify-center items-center overflow-x-scroll no-scrollbar">
           {experiences.map((exp, i) => {
             return (
-              <Experience text={exp.text} num={exp.num} i={i} client:load />
+              <Experience plus={exp.plus} text={exp.text} num={exp.num} i={i} client:load />
             );
           })}
         </div>
