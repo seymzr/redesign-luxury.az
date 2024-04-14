@@ -32,9 +32,9 @@ const Footer = () => {
           </div>
         </div>
         <div className="col-span-1 flex flex-col gap-4">
-          <h5 className="text-primary-200 font-dm text-[22px] lg:text-[25px] leading-loose">
+          <p className="text-primary-200 font-dm text-[22px] lg:text-[25px] leading-loose">
             Pages
-          </h5>
+          </p>
           <div className="flex flex-col gap-6">
             <a
               href="/about"
@@ -57,9 +57,9 @@ const Footer = () => {
           </div>
         </div>
         <div className="col-span-1 flex flex-col gap-4">
-          <h5 className="text-primary-200 font-dm text-[22px] lg:text-[25px] leading-loose">
+          <p className="text-primary-200 font-dm text-[22px] lg:text-[25px] leading-loose">
             Services
-          </h5>
+          </p>
           <div className="flex flex-col gap-6">
             <p className="tracking-tight text-base lg:text-[22px] lg:leading-[33px] font-jost text-text-gray">
               Kitchen
@@ -76,9 +76,9 @@ const Footer = () => {
           </div>
         </div>
         <div className="col-span-1 flex flex-col gap-4">
-          <h5 className="text-primary-200 font-dm text-[22px] lg:text-[25px] leading-loose">
+          <p className="text-primary-200 font-dm text-[22px] lg:text-[25px] leading-loose">
             Contact
-          </h5>
+          </p>
           <div className="flex flex-col gap-6">
             <p className="tracking-tight text-base lg:text-[22px] lg:leading-[33px] font-jost text-text-gray">
               55 East Birchwood Ave. Brooklyn, New York 11201
