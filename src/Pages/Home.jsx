@@ -4,6 +4,7 @@ import ArrowSec from "../icons/arrow-sec.tsx";
 import CallIcon from "../icons/call.tsx";
 import Experience from "../components/experience.jsx";
 import Catalogue from "../components/Catalogue.jsx";
+import { Link } from "react-router-dom";
 const Home = () => {
   const services = [
     {
@@ -183,17 +184,21 @@ const Home = () => {
         <div className="w-full flex flex-col-reverse lg:flex-row justify-between gap-10 items-center">
           <div className="flex flex-col gap-6">
             <h2 className="text-[30px] text-center lg:text-left font-dm tracking-wide capitalize leading-8 md:leading-[62.50px] md:text-[50px] text-text-blue ">
-              We what we do
+              Haqqımızda
             </h2>
             <p className="text-base md:text-[22px] lg:max-w-[85%] text-center lg:text-left tracking-tight font-jost text-text-gray leading-[33px]">
-              It is a long established fact that a reader will be distracted by
-              the of readable content of a page when lookings at its layouts the
-              points of using that it has a more-or-less normal.
+              Biz müştərilərimizin arzularını gerçəkləşdirmək üçün buradayıq.
+              Redesignluxury interyerdə yaradıcılıq və funksionallığın mükəmməl
+              birləşməsini təklif edən daxili dizayn şirkətidir.
             </p>
           </div>
           <div className="relative w-fit">
-          <img src="/bedroom.jpg" alt="" className="  z-10" />
-          <img src="/rectangle.svg" alt="rectangle" className="w-36 absolute -top-6 -left-6 z-0" />
+            <img src="/bedroom.jpg" alt="" className="  z-10" />
+            <img
+              src="/rectangle.svg"
+              alt="rectangle"
+              className="w-36 absolute -top-6 -left-6 -z-10"
+            />
           </div>
         </div>
       </section>
@@ -201,15 +206,23 @@ const Home = () => {
         <div className="w-full flex flex-col-reverse lg:flex-row-reverse justify-between gap-24 items-center">
           <div className="flex flex-col gap-6">
             <h2 className="text-[30px] text-center lg:text-left font-dm tracking-wide capitalize leading-8 md:leading-[62.50px] md:text-[50px] text-text-blue ">
-              The End Result
+              Bizim Missiyamız
             </h2>
             <p className="text-base md:text-[22px] lg:max-w-[95%] text-center lg:text-left tracking-tight font-jost text-text-gray leading-[33px]">
-              It is a long established fact that a reader will be distracted by
-              the of readable content of a page when lookings at its layouts the
-              points of using that it has a more-or-less normal.
+              Missiyamız müştərilərimizə yaşayış yerlərini daha gözəl, daha
+              funksional və daha şəxsi etməkdə kömək etməkdir. Hər bir layihə
+              müştərilərimizin unikal ehtiyaclarına və üslublarına uyğun unikal
+              dizaynlarla nəticələnir.
             </p>
           </div>
-          <img src="/about2.png" alt="" />
+          <div className="relative w-fit">
+            <img src="/gallery2.jpg" alt="" className="  z-10" />
+            <img
+              src="/rectangle.svg"
+              alt="rectangle"
+              className="w-36 absolute -top-6 -right-6 -z-10"
+            />
+          </div>
         </div>
       </section>
 
@@ -245,6 +258,7 @@ const Home = () => {
               </div>
             );
           })}
+          <Link>Daha çox</Link>
         </div>
       </section>
 
