@@ -15,7 +15,7 @@ body{
     background:url("/aboutpage-bg.png") center/cover;
 }
 .bg-contact{
-    background:linear-gradient(rgba(0, 0, 0, 0),rgba(0, 0, 0, 0)),url("/bg.png") center/cover ;
+    background:linear-gradient(rgba(0, 0, 0, 0.176),rgba(0, 0, 0, 0.601)),url("/bg.png") center/cover ;
 }
 video {
     width: 100%;
