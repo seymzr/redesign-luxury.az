@@ -33,6 +33,7 @@ const ContactForm = () => {
           <input
             type="number"
             name="phone"
+            
             className="col-span-1 border-b w-full border-black outline-none py-3 text-base lg:text-[22px] lg:leading-[33px] tracking-tight font-jost text-text-gray"
             placeholder="Phone"
           />

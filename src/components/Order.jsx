@@ -165,6 +165,7 @@ const Order = () => {
               type="text"
               placeholder="+994xxxxxxxxx"
               value={number}
+              // maxLength={13}
               onChange={(e)=>{
                 setNumber(e.target.value)
               }}

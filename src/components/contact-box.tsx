@@ -13,10 +13,7 @@ const ContactInfo = () => {
         {" "}
         <Phone /> +994 50 255 52 00
       </h5>
-      <h5 className="flex flex-col xl:flex-row gap-4 items-center text-xl font-jost tracking-tight">
-        {" "}
-        <Web /> www.yourdomain.com
-      </h5>
+      
     </div>
   );
 };

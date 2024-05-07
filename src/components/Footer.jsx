@@ -68,10 +68,10 @@ const Footer = () => {
               55 East Birchwood Ave. Brooklyn, New York 11201
             </p>
             <p className="tracking-tight text-base lg:text-[22px] lg:leading-[33px] font-jost text-text-gray">
-              contact@interno.com
+              info@redesignluxury.az
             </p>
             <p className="tracking-tight text-base lg:text-[22px] lg:leading-[33px] font-jost text-text-gray">
-              (123) 456 - 7890
+            +994 50 255 52 00
             </p>
           </div>
         </div>
