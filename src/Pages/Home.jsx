@@ -89,20 +89,20 @@ const Home = () => {
 
   const experiences = [
     {
-      num: 12,
+      num: 13,
       text: "Years Of Experiance",
       plus:true
     },
     {
-      num: 85,
+      num: 150,
       text: "Success Project",
     },
     {
-      num: 15,
+      num: 30,
       text: "Active Project",
     },
     {
-      num: 95,
+      num: 150,
       text: "Happy Customers",
     },
   ];

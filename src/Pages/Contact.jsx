@@ -1,7 +1,8 @@
 import React from "react";
-import ContactInfo from "../components/contact-box.tsx";
+
 import ContactForm from "../components/contact-form.tsx";
 import Order from "../components/Order.jsx";
+import ContactInfo from "../components/contact-box.jsx";
 const Contact = () => {
   return (
     <div>
