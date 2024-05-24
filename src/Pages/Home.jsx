@@ -96,14 +96,20 @@ const Home = () => {
     {
       num: 150,
       text: "Success Project",
+      plus:true
+
     },
     {
       num: 30,
       text: "Active Project",
+      plus:true
+
     },
     {
       num: 150,
       text: "Happy Customers",
+      plus:true
+
     },
   ];
   return (
