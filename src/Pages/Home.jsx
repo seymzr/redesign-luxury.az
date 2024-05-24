@@ -234,7 +234,7 @@ const Home = () => {
           </div>
         </div>
       </section>
-      <PartnersSwiper images={clientLogos} />
+
 
       {/* <section className="lg:max-w-[1200px] px-12 xl:px-0 w-full mx-auto pt-[100px] lg:pt-[200px] ">
         <div className="w-full flex flex-row justify-between items-center gap-12 max-w-[1200px] overflow-x-scroll no-scrollbar">
