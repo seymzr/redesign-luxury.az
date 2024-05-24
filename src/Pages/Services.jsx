@@ -13,18 +13,29 @@ const Services = () => {
     {
       icon: "/landschaft.png",
       title: "Landşaft Dizaynı",
-      text: "Landşaft dizaynı, ərazinin peyzaj və təbii mühitini planlaşdırmaq, inkişaf etdirmək və tərtib etmək məqsədilə icra edilən bir sahədir.",
+      text: "ərazinin peyzaj və təbii mühitini planlaşdırmaq, inkişaf etdirmək və tərtib etmək məqsədilə icra edilən bir sahədir.",
     },
     {
       icon: "/exterior.png",
       title: "Eksteryer Dizayn",
-      text: "Eksteryer dizayn, bir binanın və ya mülkün ərazisinin xarici görünüşünü, tərtibatını və düzəlməsini planlaşdırmaq, inkişaf etdirmək və təşkil etmək məqsədilə icra olunur",
+      text: "bir binanın və ya mülkün ərazisinin xarici görünüşünü, tərtibatını və düzəlməsini planlaşdırmaq, inkişaf etdirmək və təşkil etmək məqsədilə icra olunur.",
     },
     {
       icon: "/interior.png",
       title: "İnteryer Dizayn",
-      text: "İnteryer dizaynı, müştərinin tələblərini və mekanın funksional tələblərini örtüşdürən gözəl və praktik iç mekanlar yaratmağa nail olmaq məqsədilə işləyən bir sahədir.",
+      text: "müştərinin tələblərini və mekanın funksional tələblərini örtüşdürən gözəl və praktik iç mekanlar yaratmağa nail olmaq məqsədilə işləyən bir sahədir.",
     },
+    {
+      icon: "/exterior.png",
+      title: "Layihələndirmə",
+      text: "müəyyən edilmiş şərtlər üçün sıfırdan obyekt yaratmağa imkan verən ilkin təsvirin tərtibidir.",
+    },
+    {
+      icon: "/interior.png",
+      title: "Təmir/Tikinti",
+      text: "müasir inşaat sahəsində dayanıqlıq və uzunömürlülük təmin edən vacib bir prosesdir.",
+    },
+    
   ];
 
   const howWeWorkDetails = [
@@ -56,19 +67,20 @@ const Services = () => {
       title: "Perfection",
       info: "It is a long established fact  will be distracted. Lorem Ipsum is simply dummy from text of the and typesetting indufstry.",
     },
+    
   ];
   return (
     <di className="">
       <div className="bg-services px-12">
-        <h1 className="container py-64 text-6xl uppercase font-semibold font-serif tracking-widest text-white ">
+        <h1 className="container py-64 text-xl md:text-6xl uppercase font-semibold font-serif tracking-widest text-white ">
           Xİdmətlərİmİz
         </h1>
       </div>
 
       <section className="lg:max-w-[1200px] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-10 lg:gap-y-12 xl:px-0 w-full mx-auto pt-[100px] lg:pt-[200px] justify-between ">
-        {services.map((service) => {
+        {services.slice(0,3).map((service) => {
           return (
-            <div className="w-full col-span-1 max-w-[358px] mx-auto flex rounded-[30px] bg-primary-300/50 px-5 py-[83px] flex-col justify-center items-center gap-3 md:gap-5">
+            <div className="w-full col-span-1 max-w-[358px] mx-auto flex rounded-[30px] bg-primary-300/60 px-5 py-[83px] flex-col justify-center items-center gap-3 md:gap-5">
               <img src={service.icon} alt="" />
               <h3 className="text-text-blue font-dm text-[22px] md:text-[25px] leading-loose">
                 {service.title}
@@ -80,7 +92,24 @@ const Services = () => {
             </div>
           );
         })}
+        
       </section>
+      <div className="lg:max-w-[1200px] mx-auto w-full flex flex-col md:flex-row gap-8 lg:gap-10 items-center justify-center my-8 lg:my-10">
+        {services.slice(3,5).map((service) => {
+          return (
+            <div className="w-full col-span-1 max-w-[358px] mx-auto flex rounded-[30px] bg-primary-300/60 px-5 py-[83px] flex-col justify-center items-center gap-3 md:gap-5">
+              <img src={service.icon} alt="" />
+              <h3 className="text-text-blue font-dm text-[22px] md:text-[25px] leading-loose">
+                {service.title}
+              </h3>
+              <p className="text-base md:text-[22px] tracking-tight font-jost text-text-gray leading-[33px] text-center">
+                {" "}
+                {service.text}
+              </p>
+            </div>
+          );
+        })}
+        </div>
 
       <section className="px-12 xl:px-0 w-full mt-[100px] lg:mt-[200px] min-h-screen ">
         <div className="w-full lg:max-w-[1200px] p-12 mx-auto lg:px-[116px] lg:py-[160px] bg-primary-300 rounded-[70px] ">
