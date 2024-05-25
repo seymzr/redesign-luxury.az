@@ -85,17 +85,16 @@ const Home = () => {
             {t('homepage.section2.title')}
           </h2>
           <p className="text-base md:text-[22px] text-center lg:text-left tracking-tight font-jost text-text-gray leading-[33px]">
-            Peşəkar komandamız tərəfindən interyeriniz , ən xırda detalına qədər
-            düşünülür
+          {t('homepage.section2.desc')}
           </p>
           <div className="flex gap-4 pt-3 items-center">
             <a aria-label="link to redesign luxury telephone number" href="tel:+994502555200">
               <CallIcon />
             </a>
-            <p className="flex flex-col text-text-gray-200 font-jost tracking-tight">
+            <a href="tel:+9942555200" className="flex flex-col text-text-gray-200 font-jost tracking-tight">
               <span className="text-2xl font-bold leading-9 ">050 255 52 00</span>
-              <span className="text-[22px] leading-8">Bizə zəng edin</span>
-            </p>
+
+            </a>
           </div>
           {/* <Button text="Get Free Estimate" /> */}
         </div>
@@ -108,45 +107,15 @@ const Home = () => {
           />
         </div>
       </section>
-      {/* <section className="lg:max-w-[1200px] px-12 xl:px-0 w-full mx-auto pt-[100px] lg:pt-[200px] ">
-        <div className="w-full flex flex-col bg-primary-300 rounded-[48px] px-6 py-[88px]">
-          <h2 className="font-dm tracking-wide text-center leading-[37px] lg:leading-[62.50px] text-[30px] lg:text-[50px] w-full lg:max-w-[50%] pb-9 mx-auto">
-            What the People Thinks About Us
-          </h2>
-          <div className="flex flex-col gap-8 lg:gap-10 lg:flex-row justify-between">
-            {reviews.map((rev) => {
-              return (
-                <div className="w-full bg-white max-w-[370px] px-[37px] py-[53px] rounded-3xl mx-auto flex flex-col justify-center gap-4 md:gap-6">
-                  <div className="flex flex-col sm:flex-row gap-6 items-center">
-                    <img src={rev.img} alt="" />
-                    <p className="flex flex-col tracking-tight leading-9">
-                      <span className="text-primary-200 text-lg lg:text-[25px] font-dm">
-                        {rev.name}
-                      </span>
-                      <span className="text-text-gray-200 text-base lg:text-lg font-jost">
-                        {rev.location}
-                      </span>
-                    </p>
-                  </div>
-                  <p className="font-jost tracking-tight leading-8 text-base text-center sm:text-left text-text-gray lg:text-[22px]">
-                    {rev.review}
-                  </p>
-                </div>
-              );
-            })}
-          </div>
-        </div>
-      </section> */}
+      
       <section className="w-full pt-[100px] lg:pt-[150px] px-12 lg:px-0 mx-auto lg:max-w-[1200px] ">
         <div className="w-full flex flex-col-reverse lg:flex-row justify-between gap-10 items-center">
           <div className="flex flex-col gap-6">
             <h2 className="text-[30px] text-center lg:text-left font-dm tracking-wide capitalize leading-8 md:leading-[62.50px] md:text-[50px] text-text-blue ">
-              Haqqımızda
+              {t('homepage.about.title')}
             </h2>
             <p className="text-base md:text-[22px] lg:max-w-[85%] text-center lg:text-left tracking-tight font-jost text-text-gray leading-[33px]">
-              Biz müştərilərimizin arzularını gerçəkləşdirmək üçün buradayıq.
-              Redesignluxury interyerdə yaradıcılıq və funksionallığın mükəmməl
-              birləşməsini təklif edən interyer dizayn şirkətidir.
+            {t('homepage.about.desc')}
             </p>
           </div>
           <div className="relative w-fit">
@@ -163,13 +132,10 @@ const Home = () => {
         <div className="w-full flex flex-col-reverse lg:flex-row-reverse justify-between gap-24 items-center">
           <div className="flex flex-col gap-6">
             <h2 className="text-[30px] text-center lg:text-left font-dm tracking-wide capitalize leading-8 md:leading-[62.50px] md:text-[50px] text-text-blue ">
-              Bizim Missiyamız
+            {t('homepage.mission.title')}
             </h2>
             <p className="text-base md:text-[22px] lg:max-w-[95%] text-center lg:text-left tracking-tight font-jost text-text-gray leading-[33px]">
-              Missiyamız müştərilərimizə yaşayış yerlərini daha gözəl, daha
-              funksional və daha şəxsi etməkdə kömək etməkdir. Hər bir layihə
-              müştərilərimizin unikal ehtiyaclarına və üslublarına uyğun unikal
-              dizaynlarla nəticələnir.
+            {t('homepage.mission.desc')}
             </p>
           </div>
           <div className="relative w-fit">
@@ -194,25 +160,15 @@ const Home = () => {
 
       <section className="lg:max-w-[1200px] px-12 xl:px-0 w-full mx-auto pt-[100px] lg:pt-[200px] ">
         <h2 className="font-dm tracking-wide text-center leading-[37px] lg:leading-[62.50px] text-[30px] lg:text-[50px] w-full lg:max-w-[50%] pb-2 mx-auto">
-          Bizim Proyektlərimiz
+          {t('homepage.projects')}
         </h2>
-        <p className="text-base md:text-[22px] text-center tracking-tight font-jost text-text-gray leading-[33px] lg:max-w-[60%] mx-auto">
-          It is a long established fact that a reader will be distracted by the
-          of readable content of page lookings at its layouts points.
-        </p>
+        
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-x-[104px] lg:gap-y-[56px] mt-12 lg:mt-[93px]">
           {projects.map((proj,index) => {
             return (
               <div key={index} className="w-full flex flex-col gap-4">
                 <img src={proj.img} alt="" />
-                <p className="flex flex-col tracking-tight leading-9">
-                  <span className="text-primary-200 text-lg lg:text-[25px] font-dm">
-                    {proj.name}
-                  </span>
-                  <span className="text-text-gray-200 text-base lg:text-lg font-jost">
-                    {proj.text}
-                  </span>
-                </p>
+                
               </div>
             );
           })}
