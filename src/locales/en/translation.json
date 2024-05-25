@@ -1,0 +1,141 @@
+{
+    "navbar": {
+        "home": "Home",
+        "services": "Services",
+        "gallery": "Gallery",
+        "contact": "Contact"
+    },
+    "homepage": {
+        "hero": {
+            "title": "Make Your Home Special",
+            "desc": "If you want your home to have a unique interior, you can contact the Redesign Luxury team"
+        },
+        "setups": {
+            "bedroom": {
+                "title": "Bedroom",
+                "desc": "A well-designed bedroom offers an ideal place to escape daily stress and tension"
+            },
+            "kitchen": {
+                "title": "Kitchen",
+                "desc": "The kitchen is one of the most important parts of your home. You spend most of your time here. Therefore, the kitchen design should be comfortable and functional"
+            },
+            "living": {
+                "title": "Living Room",
+                "desc": "A non-standard and eye-catching living room design will captivate everyone who sees it"
+            },
+            "kid": {
+                "title": "Kids' Room",
+                "desc": "The design of a kids' room should be considered according to the child's age, taste, and needs. We create unique designs for your children to have a comfortable and fun time"
+            },
+            "bathroom": {
+                "title": "Bathroom",
+                "desc": "The design of the bathroom is important in terms of ease of use, efficient use of space, and aesthetic beauty"
+            },
+            "hall": {
+                "title": "Hallway",
+                "desc": "Hallway design creates the first impression of the house. A beautifully designed hallway will give you and your guests a pleasant mood"
+            },
+            "laundry": {
+                "title": "Laundry",
+                "desc": "Laundry work can be time-consuming and sometimes tiring. A well-designed laundry room makes the process easier and helps save time"
+            },
+            "wardrobe": {
+                "title": "Wardrobe",
+                "desc": "A well-designed wardrobe room makes it easy to organize clothes, shoes, and accessories properly and neatly"
+            },
+            "exterior": {
+                "title": "Exterior Design",
+                "desc": "It is an important aspect in the field of architecture and urban planning. It enhances the functionality, aesthetics, and overall value of buildings and spaces"
+            }
+        },
+        "section2": {
+            "title": "Maximum Comfort with Minimalist Touches",
+            "desc": "Our professional team considers every detail of your interior design"
+        },
+        "about": {
+            "title": "About Us",
+            "desc": "We are here to make our clients' dreams come true. Redesign Luxury is an interior design company offering the perfect combination of creativity and functionality in interior design"
+        },
+        "mission": {
+            "title": "Our Mission",
+            "desc": "Our mission is to help our clients make their living spaces more beautiful, functional, and personal. Each project results in unique designs tailored to our clients' unique needs and styles"
+        },
+        "projects": "Our Projects",
+        "counts": {
+            "experience": "Experience",
+            "success": "Successful Projects",
+            "active": "Active Projects",
+            "customers": "Happy Customers"
+        }
+    },
+    "services": {
+        "landscape": {
+            "title": "Landscape Design",
+            "desc": "It is a field carried out with the aim of planning, developing, and designing the landscape and natural environment of an area"
+        },
+        "exterior": {
+            "title": "Exterior Design",
+            "desc": "It is carried out with the aim of planning, developing, and organizing the external appearance, layout, and arrangement of a building or property"
+        },
+        "interior": {
+            "title": "Interior Design",
+            "desc": "It is a field aimed at creating beautiful and practical interior spaces that meet the client's requirements and the functional needs of the space"
+        },
+        "projecting": {
+            "title": "Projecting",
+            "desc": "It is the drafting of an initial description that allows the creation of an object from scratch under specified conditions"
+        },
+        "repair": {
+            "title": "Repair/Construction",
+            "desc": "It is an important process in modern construction that ensures durability and longevity"
+        },
+        "how": {
+            "title": "How We Work",
+            "step1": {
+                "title": "Initial Stage",
+                "desc": "A visit to the apartment (object) is made for inspection and measurement. Based on the client's requests, several versions of the layout plan are drafted. A placement plan is prepared based on the layout plan selected by the client"
+            },
+            "step2": {
+                "title": "Design Stage",
+                "desc": "The design is prepared individually for each client. In addition to perfect design, a functional and comfortable interior is provided. Every detail is considered to be unique to the client, and designs that are beyond the standards and eye-catching are created"
+            },
+            "step3": {
+                "title": "Repair Stage",
+                "desc": "One of the most important and complex stages for realizing the design is repair. Our craftsmen are professional engineers. Entrust your work to professionals for quality and neat repairs"
+            },
+            "step4": {
+                "title": "Furniture and Accessories Stage",
+                "desc": "The selection of furniture and accessories should be done correctly to match the interior design. Every small detail is carefully selected to ensure the client has a comfortable and aesthetic interior"
+            }
+        }
+    },
+    "contact": {
+        "title": "Own the Home of Your Dreams with Redesign Luxury",
+        "subtitle": "Build Your Dream Home with Us",
+        "name": "First Name",
+        "surname": "Last Name",
+        "phone": "Contact Number",
+        "email": "Email",
+        "address": "Address",
+        "size": "Home Size",
+        "rooms": "Number of Rooms",
+        "style": "Design Style",
+        "roomtype": "Room Types",
+        "colors1": "Preferred Colors",
+        "colors2": "Disliked Colors",
+        "addcolor": "Add Color",
+        "contacttype": "Contact Method",
+        "mail": "Mail",
+        "telephone": "Telephone",
+        "frequency": "Notification Frequency",
+        "everyday": "Every Day",
+        "2week": "Twice a Week",
+        "1week": "Once a Week",
+        "deadline": "Deadline",
+        "additional": "Additional Notes",
+        "write": "Write here...",
+        "submit": "Submit"
+    },
+    "pages": "Pages",
+    "footerTitle": "Where Aesthetics and Function Meet"
+}
