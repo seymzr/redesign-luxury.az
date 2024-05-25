@@ -135,9 +135,24 @@
         "deadline":"Deadline",
         "additional":"Əlavə qeydlər",
         "write":"Qeyd edin...",
-        "submit":"Göndər"
+        "submit":"Göndər",
+        "select":"Seçin...",
+        "roomstyles": {
+            "livingroom": "Qonaq otağı",
+            "kitchen": "Mətbəx",
+            "kitchenstudio": "Mətbəx studio",
+            "bedroom": "Yataq otağı",
+            "kidsroomboy": "Uşaq otağı (oğlan)",
+            "kidsroomgirl": "Uşaq otağı (qız)",
+            "guestbedroom": "Qonaq üçün yataq otağı",
+            "laundry": "Camaşırxana",
+            "bathroom": "Sanuzel",
+            "storage": "Depo",
+            "wardrobe": "Qarderob"
+        }
         
     },
     "pages":"Səhifələr",
-    "footerTitle":"Estetika və funksiyanın qovuşduğu yer"
+    "footerTitle":"Estetika və funksiyanın qovuşduğu yer",
+    "contact-us":"Bizimlə Əlaqə"
 }
