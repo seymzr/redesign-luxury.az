@@ -134,8 +134,25 @@
         "deadline": "Deadline",
         "additional": "Additional Notes",
         "write": "Write here...",
-        "submit": "Submit"
+        "submit": "Submit",
+        "select":"Select...",
+        "roomstyles": {
+            "livingroom": "Living Room",
+            "kitchen": "Kitchen",
+            "kitchenstudio": "Kitchen Studio",
+            "bedroom": "Bedroom",
+            "kidsroomboy": "Kids' Room (Boy)",
+            "kidsroomgirl": "Kids' Room (Girl)",
+            "guestbedroom": "Guest Bedroom",
+            "laundry": "Laundry",
+            "bathroom": "Bathroom",
+            "storage": "Storage",
+            "wardrobe": "Wardrobe"
+        }
+
     },
     "pages": "Pages",
-    "footerTitle": "Where Aesthetics and Function Meet"
+    "footerTitle": "Where Aesthetics and Function Meet",
+    "contact-us":"Contact Us"
+
 }
