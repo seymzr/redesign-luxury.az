@@ -39,24 +39,24 @@ const Home = () => {
   const experiences = [
     {
       num: 13,
-      text: t('counts.experience'),
+      text: t('homepage.counts.experience'),
       plus:true
     },
     {
       num: 150,
-      text: "Success Project",
+      text: t('homepage.counts.success'),
       plus:true
 
     },
     {
       num: 30,
-      text: "Active Project",
+      text: t('homepage.counts.active'),
       plus:true
 
     },
     {
       num: 150,
-      text: "Happy Customers",
+      text: t('homepage.counts.customers'),
       plus:true
 
     },
@@ -67,11 +67,10 @@ const Home = () => {
         <div className="w-full mx-auto flex flex-col  p-5 items-center justify-center bg-primary-200 h-full">
           <h1 className="text-[40px] leading-[50px] md:text-[60px] xl:text-[85px] pb-4 font-dm md:leading-[106.25px] w-full xl:max-w-[70%] text-primary-100">
             {" "}
-            {/* Let Your Home Be Unique */}Eviniz Özəl Olsun{" "}
+            {/* Let Your Home Be Unique */}{t('homepage.hero.title')}{" "}
           </h1>
           <p className=" md:text-[22px] pb-5 font-jost text-primary-400 w-full lg:max-w-[70%]">
-            Evinizin fərqli interyerə sahib olmağını istəyirsizsə Redesign
-            Luxury komandasına müraciət edə bilərsiz
+            {t('homepage.hero.desc')}
           </p>
           {/* <Button text="Get Started" variant="secondary" className="self-start"/> */}
         </div>
@@ -83,7 +82,7 @@ const Home = () => {
       <section className="w-full lg:max-w-[1200px] mx-auto px-12 xl:px-0 flex flex-col-reverse justify-center items-center lg:grid grid-cols-2 gap-[75px] pt-[100px] lg:pt-[200px]">
         <div className="flex flex-col gap-8 max-w-[472px] items-center lg:items-start py-6">
           <h2 className="text-[30px] text-center capitalize lg:text-left font-dm tracking-wide leading-8 md:leading-[62.50px] md:text-[50px] text-text-blue ">
-            {t('home.section2.title')}
+            {t('homepage.section2.title')}
           </h2>
           <p className="text-base md:text-[22px] text-center lg:text-left tracking-tight font-jost text-text-gray leading-[33px]">
             Peşəkar komandamız tərəfindən interyeriniz , ən xırda detalına qədər
