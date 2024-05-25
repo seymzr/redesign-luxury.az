@@ -69,7 +69,7 @@ const Services = () => {
     
   ];
   return (
-    <di className="">
+    <div className="">
       <div className="bg-services px-12">
         <h1 className="container py-64 text-xl md:text-6xl uppercase font-semibold font-serif tracking-widest text-white ">
           {t('navbar.services')}
@@ -77,9 +77,9 @@ const Services = () => {
       </div>
 
       <section className="lg:max-w-[1200px] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-10 lg:gap-y-12 xl:px-0 w-full mx-auto pt-[100px] lg:pt-[200px] justify-between ">
-        {services.slice(0,3).map((service) => {
+        {services.slice(0,3).map((service,index) => {
           return (
-            <div className="w-full col-span-1 max-w-[358px] mx-auto flex rounded-[30px] bg-primary-300/60 px-5 py-[83px] flex-col justify-center items-center gap-3 md:gap-5">
+            <div key={index} className="w-full col-span-1 max-w-[358px] mx-auto flex rounded-[30px] bg-primary-300/60 px-5 py-[83px] flex-col justify-center items-center gap-3 md:gap-5">
               <img src={service.icon} alt="" />
               <h3 className="text-text-blue font-dm text-[22px] md:text-[25px] leading-loose">
                 {service.title}
@@ -94,9 +94,9 @@ const Services = () => {
         
       </section>
       <div className="lg:max-w-[1200px] mx-auto w-full flex flex-col md:flex-row gap-8 lg:gap-10 items-center justify-center my-8 lg:my-10">
-        {services.slice(3,5).map((service) => {
+        {services.slice(3,5).map((service,index) => {
           return (
-            <div className="w-full col-span-1 max-w-[358px] mx-auto flex rounded-[30px] bg-primary-300/60 px-5 py-[83px] flex-col justify-center items-center gap-3 md:gap-5">
+            <div key={index} className="w-full col-span-1 max-w-[358px] mx-auto flex rounded-[30px] bg-primary-300/60 px-5 py-[83px] flex-col justify-center items-center gap-3 md:gap-5">
               <img src={service.icon} alt="" />
               <h3 className="text-text-blue font-dm text-[22px] md:text-[25px] leading-loose">
                 {service.title}
@@ -126,7 +126,7 @@ const Services = () => {
               } gap-[50px] items-center max-w-[967px]`;
 
               return (
-                <div className={className}>
+                <div key={index} className={className}>
                   <img src={detail.img} alt="" />
                   <div className="flex flex-col gap-12 lg:gap-[58px]">
                     <div className="justify-between hidden lg:flex">
@@ -148,7 +148,7 @@ const Services = () => {
           </div>
         </div>
       </section>
-    </di>
+    </div>
   );
 };
 
