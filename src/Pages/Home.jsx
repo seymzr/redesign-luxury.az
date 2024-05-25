@@ -7,44 +7,10 @@ import Catalogue from "../components/Catalogue.jsx";
 import { Link } from "react-router-dom";
 import ArrowPri from "../icons/arrow-pri.tsx";
 import PartnersSwiper from "../components/PartnersSwiper.jsx";
+import { useTranslation } from "react-i18next";
 const Home = () => {
-  const services = [
-    {
-      title: "Project Plan",
-      text: "There are many variations of the passages of lorem Ipsum from available, majority.",
-    },
-    {
-      title: "Interior Work",
-      text: "There are many variations of the passages of lorem Ipsum from available, majority.",
-    },
-    {
-      title: "Realization",
-      text: "There are many variations of the passages of lorem Ipsum from available, majority.",
-    },
-  ];
-  const reviews = [
-    {
-      img: "/natasha.png",
-      name: "Nattasha Mith",
-      location: "Sydney, USA",
-      review:
-        "Lorem Ipsum is simply dummy text of the typesetting industry. Ipsum has been.",
-    },
-    {
-      img: "/benny.png",
-      name: "Benny Roll",
-      location: "Sydney, New York",
-      review:
-        "Lorem Ipsum is simply dummy text of the typesetting industry. Ipsum has been.",
-    },
-    {
-      img: "/raymond.png",
-      name: "Raymond Galario",
-      location: "Sydney, Australia",
-      review:
-        "Lorem Ipsum is simply dummy text of the typesetting industry. Ipsum has been.",
-    },
-  ];
+  const {t,i18n} = useTranslation()
+  
 
   const projects = [
     {
@@ -69,28 +35,11 @@ const Home = () => {
     },
   ];
 
-  const clientLogos = [
-    {
-      img: "/clientLogo1.svg",
-    },
-    {
-      img: "/clientLogo2.svg",
-    },
-    {
-      img: "/clientLogo3.svg",
-    },
-    {
-      img: "/clientLogo4.svg",
-    },
-    {
-      img: "/clientLogo5.svg",
-    },
-  ];
-
+ 
   const experiences = [
     {
       num: 13,
-      text: "Years Of Experiance",
+      text: t('counts.experience'),
       plus:true
     },
     {
@@ -134,7 +83,7 @@ const Home = () => {
       <section className="w-full lg:max-w-[1200px] mx-auto px-12 xl:px-0 flex flex-col-reverse justify-center items-center lg:grid grid-cols-2 gap-[75px] pt-[100px] lg:pt-[200px]">
         <div className="flex flex-col gap-8 max-w-[472px] items-center lg:items-start py-6">
           <h2 className="text-[30px] text-center capitalize lg:text-left font-dm tracking-wide leading-8 md:leading-[62.50px] md:text-[50px] text-text-blue ">
-            Minimalist toxunuşlarla maksimum rahatlıq
+            {t('home.section2.title')}
           </h2>
           <p className="text-base md:text-[22px] text-center lg:text-left tracking-tight font-jost text-text-gray leading-[33px]">
             Peşəkar komandamız tərəfindən interyeriniz , ən xırda detalına qədər
