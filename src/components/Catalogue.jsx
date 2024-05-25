@@ -1,79 +1,81 @@
+import { useTranslation } from "react-i18next";
 import { TbArrowNarrowRight } from "react-icons/tb";
 
 export default function Catalogue() {
+  const {t,i18n} =useTranslation()
   const items = [
     {
       id: "01",
-      catagory: "BEDROOM SETUP",
-      title: "Cossy Bedroom Setup",
+      catagory: t('homepage.setups.bedroom.title'),
+
       image: "/bedroom.jpg",
       description:
-        "family drowing room with a clean and comfortable design for your family.",
+      t('homepage.setups.bedroom.desc'),
     },
     {
       id: "02",
-      catagory: "KITCHING SETUP",
-      title: "Neat & Clean Kitchen",
+      catagory: t('homepage.setups.kitchen.title'),
+
       image: "/kitchen1.jpg",
       description:
-        "family drowing room with a clean and comfortable design for your family.",
+      t('homepage.setups.kitchen.desc'),
     },
     {
       id: "03",
-      catagory: "BATHROOM SETUP",
-      title: "Bath Room",
+      catagory: t('homepage.setups.bathroom.title'),
+
       image: "/drowing.jpg",
       description:
-        "family bathroom with a clean and comfortable design for your family.",
+      t('homepage.setups.bathroom.desc'),
     },
     {
       id: "04",
-      catagory: "LIVING SETUP",
-      title: "Clean Family Room",
+      catagory: t('homepage.setups.living.title'),
+
       image: "/livingroom.jpg",
       description:
-        "family drowing room with a clean and comfortable design for your family.",
+      t('homepage.setups.living.desc'),
     },
 
     {
       id: "05",
-      catagory: "HALL SETUP",
-      title: "Clean Family Room",
-      image: "/livingroom.jpg",
+      catagory: t('homepage.setups.hall.title'),
+
+      image: "/gallery/gallery55.png",
       description:
-        "family drowing room with a clean and comfortable design for your family.",
+      t('homepage.setups.hall.desc'),
     },
     {
       id: "06",
-      catagory: "LAUNDRY SETUP",
-      title: "Clean Family Room",
-      image: "/livingroom.jpg",
+      catagory: t('homepage.setups.laundry.title'),
+
+      image: "/gallery/gallery1.jpg",
       description:
-        "family drowing room with a clean and comfortable design for your family.",
+      t('homepage.setups.laundry.desc'),
     },
     {
       id: "07",
-      catagory: "EXTERIOR SETUP",
-      title: "Clean Family Room",
-      image: "/livingroom.jpg",
+      catagory: t('homepage.setups.exterior.title'),
+
+      image: "/gallery/gallery24.png",
       description:
-        "family drowing room with a clean and comfortable design for your family.",
+      t('homepage.setups.exterior.desc'),
     },
     {
       id: "08",
-      catagory: "KID ROOM SETUP",
-      title: "Clean Family Room",
-      image: "/livingroom.jpg",
+      catagory: t('homepage.setups.kid.title'),
+
+      image: "/gallery/gallery25.png",
       description:
-        "family drowing room with a clean and comfortable design for your family.",
+      t('homepage.setups.kid.desc'),
     },
     {
-        id: "08",
-        catagory: "WARDROBE ROOM SETUP",
-        title: "Clean Family Room",
-        image: "/livingroom.jpg",
+        id: "09",
+        catagory: t('homepage.setups.wardrobe.title'),
+
+        image: "/gallery/gallery42.jpg",
         description:
-          "family drowing room with a clean and comfortable design for your family.",
+        t('homepage.setups.wardrobe.desc'),
       },
   ];
 
@@ -90,9 +92,7 @@ export default function Catalogue() {
               <p className="text-sm">{item.catagory}</p>
               <span className="text-sm ">{item.id}</span>
             </div>
-            <p className="block text-xl font-semibold" href="">
-              {item.title}
-            </p>
+            
             <p className="py-4 text-gray-500 drop-shdaow">{item.description}</p>
           </div>
 
@@ -103,10 +103,10 @@ export default function Catalogue() {
         </div>
       ))}
     </div>
-     <div className="grid gap-8 divide-gray-300 px-4 py-5 md:py-0 md:px-0 lg:divide-x lg:gap-0 lg:grid-cols-5 md:grid-cols-2">
+     <div className="grid gap-8 divide-gray-300 px-4 py-5 lg:h-[450px] md:py-0 md:px-0 lg:divide-x lg:gap-0 lg:grid-cols-5 md:grid-cols-2">
      {items?.slice(4,9).map((item) => (
-       <div key={item.id} className="relative overflow-hidden group">
-         <div>
+       <div key={item.id} className="relative overflow-hidden group h-full">
+         <div className="h-full">
            <img src={item.image} alt="" className="w-full h-full" />
          </div>
          <div className="absolute top-0 p-8 m-12 bg-white bg-opacity-60 backdrop-blur-sm">
@@ -114,9 +114,7 @@ export default function Catalogue() {
              <p className="text-sm">{item.catagory}</p>
              <span className="text-sm ">{item.id}</span>
            </div>
-           <p className="block text-xl font-semibold" href="">
-             {item.title}
-           </p>
+           
            <p className="py-4 text-gray-500 drop-shdaow">{item.description}</p>
          </div>
 
