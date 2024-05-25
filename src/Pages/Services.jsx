@@ -7,6 +7,7 @@ import ServiceIconOne from "../icons/service1-icon.tsx";
 import ServiceIconTwo from "../icons/service2-icon.tsx";
 import ServiceIconThree from "../icons/service3-icon.tsx";
 import ServiceIconFour from "../icons/service4-icon.tsx";
+import { t } from "i18next";
 
 const Services = () => {
   const services = [
@@ -73,7 +74,7 @@ const Services = () => {
     <di className="">
       <div className="bg-services px-12">
         <h1 className="container py-64 text-xl md:text-6xl uppercase font-semibold font-serif tracking-widest text-white ">
-          Xİdmətlərİmİz
+          {t('navbar.services')}
         </h1>
       </div>
 
