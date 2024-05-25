@@ -1,8 +1,10 @@
 import React, { useEffect, useState } from "react";
 
 import emailjs from 'emailjs-com';
+import { useTranslation } from "react-i18next";
 
 const Order = () => {
+  const {t,i18n} = useTranslation()
   const designstyles = [
     "Modern",
     "Luxury Modern",
@@ -11,19 +13,19 @@ const Order = () => {
     "Loft",
   ];
   const roomstyles = [
-    "Qonaq otağı",
-    "Mətbəx",
-    "Mətbəx studio",
-    "Yataq otağı",
-    "Uşaq otağı(oğlan)",
-    "Uşaq otağı(qız)",
-    "Qonaq üçün yataq otağı",
-    "Camaşırxana",
-    "Sanuzel",
-    "Depo",
-    "Qarderob",
+    t('contact.roomstyles.livingroom'),
+    t('contact.roomstyles.kitchen'),
+    t('contact.roomstyles.kitchenstudio'),
+    t('contact.roomstyles.bedroom'),
+    t('contact.roomstyles.kidsroomboy'),
+    t('contact.roomstyles.kidsroomgirl'),
+    t('contact.roomstyles.guestbedroom'),
+    t('contact.roomstyles.laundry'),
+    t('contact.roomstyles.bathroom'),
+    t('contact.roomstyles.storage'),
+    t('contact.roomstyles.wardrobe'),
   ];
-  const infoFrequency = ["Hər gün", "Həftədə 2 dəfə", "Həftədə 1 dəfə"];
+  const infoFrequency = [t('contact.everyday'), t('contact.2week'), t('contact.1week')];
 
   const [selectedOptions, setSelectedOptions] = useState([]);
   const [inputValue, setInputValue] = useState("");
@@ -128,36 +130,36 @@ const Order = () => {
   return (
     <div>
       <h2 className="text-[30px] my-12 text-center capitalize font-dm tracking-wide lg:max-w-[60%] leading-8 md:leading-[62.50px] md:text-[50px] mx-auto text-text-blue ">
-        Xəyalındaki evi bizimlə qur
+        {t('contact.subtitle')}
       </h2>
 
       <div className="container mx-auto py-5">
         <div className="grid grid-cols-2 gap-x-[16px] gap-y-[30px] px-3 md:px-96">
           <div className="flex flex-col  ">
             <label className="text-xl mb-2" htmlFor="name">
-              Ad
+             {t('contact.name')}
             </label>
             <input
               className=" duration-300 border border-solid border-primary-100 p-2  focus:outline-none focus:border-primary-100/90"
               id="name"
               type="text"
-              placeholder="Ad"
+              placeholder={t('contact.name')}
             />
           </div>
           <div className="flex flex-col  ">
             <label className="text-xl mb-2" htmlFor="name">
-              Soyad
+            {t('contact.surname')}
             </label>
             <input
               className=" duration-300 border border-solid border-primary-100 p-2  focus:outline-none focus:border-primary-100/90"
               id="surname"
               type="text"
-              placeholder="Soyad"
+              placeholder={t('contact.surname')}
             />
           </div>
           <div className="flex flex-col  ">
             <label className="text-xl mb-2" htmlFor="name">
-              Əlaqə Nömrəsi
+            {t('contact.phone')}
             </label>
             <input
               className=" duration-300 border border-solid border-primary-100 p-2  focus:outline-none focus:border-primary-100/90"
@@ -173,7 +175,7 @@ const Order = () => {
           </div>
           <div className="flex flex-col  ">
             <label className="text-xl mb-2" htmlFor="name">
-              Email
+            {t('contact.email')}
             </label>
             <input
               className=" duration-300 border border-solid border-primary-100 p-2  focus:outline-none focus:border-primary-100/90"
@@ -184,7 +186,7 @@ const Order = () => {
           </div>
           <div className="flex flex-col col-span-2  ">
             <label className="text-xl mb-2" htmlFor="name">
-              Mənzil Adresi
+            {t('contact.address')}
             </label>
             <input
               className=" duration-300 border border-solid border-primary-100 p-2  focus:outline-none focus:border-primary-100/90"
@@ -195,7 +197,7 @@ const Order = () => {
           </div>
           <div className="flex flex-col   ">
             <label className="text-xl mb-2" htmlFor="name">
-              Mənzil Ölçüsü
+            {t('contact.size')}
             </label>
             <input
               className=" duration-300 border border-solid border-primary-100 p-2  focus:outline-none focus:border-primary-100/90"
@@ -207,7 +209,7 @@ const Order = () => {
           </div>
           <div className="flex flex-col   ">
             <label className="text-xl mb-2" htmlFor="name">
-              Otaq sayı
+            {t('contact.rooms')}
             </label>
             <input
               className=" duration-300 border border-solid border-primary-100 p-2  focus:outline-none focus:border-primary-100/90"
@@ -219,14 +221,14 @@ const Order = () => {
           </div>
           <div className="flex flex-col col-span-2">
             <label className="text-xl mb-2" htmlFor="name">
-              Dizayn stili
+            {t('contact.style')}
             </label>
             <input
               list="designs"
               className=" duration-300 border border-solid border-primary-100 p-2 focus:outline-none focus:border-primary-100/90"
               id="design"
               type="text"
-              placeholder="Seçin..."
+              placeholder={t('contact.select')}
             />
             <datalist id="designs">
               {designstyles.map((item, index) => (
@@ -238,7 +240,7 @@ const Order = () => {
           </div>
           <div className="flex flex-col col-span-2">
             <label className="text-xl mb-2" htmlFor="name">
-              Otaq Tipləri
+            {t('contact.roomtype')}
             </label>
 
             <select
@@ -247,7 +249,7 @@ const Order = () => {
               id="rooms"
             >
               <option selected disabled value={null}>
-                Seçin...
+                {t('contact.select')}
               </option>
               {roomstyles.map((item, index) => (
                 <option key={index} value={item}>
@@ -276,16 +278,16 @@ const Order = () => {
               ))}
             </div>
           </div>
-          <ColorPicker label={"Bəyənilən rənglər"} updateSelectedColors={updateSelectedColors} />
-          <ColorPicker label={"Bəyənilməyən rənglər"} updateSelectedColors={updateUnselectedColors} />
+          <ColorPicker label={t('contact.colors1')} updateSelectedColors={updateSelectedColors} />
+          <ColorPicker label={t('contact.colors2')} updateSelectedColors={updateUnselectedColors} />
           <div className="flex flex-col   ">
             <label className="text-xl mb-2" htmlFor="name">
-              Əlaqə forması
+            {t('contact.contacttype')}
             </label>
             <div className="flex">
               <div className="text-lg flex items-center">
                 <label className="mr-2" htmlFor="mail">
-                  Mail
+                {t('contact.mail')}
                 </label>
                 <input
                   className="w-5 h-5"
@@ -296,7 +298,7 @@ const Order = () => {
               </div>
               <div className="text-lg mx-2 flex items-center">
                 <label className="mr-2" htmlFor="tel">
-                  Telefon
+                {t('contact.telephone')}
                 </label>
                 <input
                   className="w-5 h-5"
@@ -309,7 +311,7 @@ const Order = () => {
           </div>
           <div className="flex flex-col col-span-2">
             <label className="text-xl mb-2" htmlFor="name">
-              Məlumatlandırılma aralığı
+            {t('contact.frequency')}
             </label>
 
             <select
@@ -317,7 +319,7 @@ const Order = () => {
               id="infoFrequency"
             >
               <option  disabled value={null}>
-                Seçin...
+                {t('contact.select')}
               </option>
               {infoFrequency.map((item, index) => (
                 <option key={index} value={item}>
@@ -328,7 +330,7 @@ const Order = () => {
           </div>
           <div className="flex flex-col col-span-2">
             <label className="text-xl mb-2" htmlFor="name">
-              Deadline
+              {t('contact.deadline')}
             </label>
 
             <input
@@ -341,15 +343,15 @@ const Order = () => {
 
           <div className="flex flex-col col-span-2">
             <label className="text-xl mb-2" htmlFor="name">
-              Əlavə qeydlər
+              {t('contact.additional')}
             </label>
 
-            <textarea id="additionalNotes" rows="10" placeholder="Qeyd edin..." className=" duration-300 border border-solid border-primary-100 p-2 focus:outline-none focus:border-primary-100/90 ">
+            <textarea id="additionalNotes" rows="10" placeholder={t('contact.write')} className=" duration-300 border border-solid border-primary-100 p-2 focus:outline-none focus:border-primary-100/90 ">
 
             </textarea>
           </div>
 
-          <button onClick={sendEmail} className="bg-primary-100 p-3 w-48 border border-solid border-primary-100 text-white font-medium duration-300 hover:text-primary-100 hover:bg-white">Göndər</button>
+          <button onClick={sendEmail} className="bg-primary-100 p-3 w-48 border border-solid border-primary-100 text-white font-medium duration-300 hover:text-primary-100 hover:bg-white">{t('contact.submit')}</button>
         </div>
       </div>
     </div>
