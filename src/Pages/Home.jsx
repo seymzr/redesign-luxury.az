@@ -173,7 +173,7 @@ const Home = () => {
             );
           })}
         </div>
-        <Link to='/gallery' className="bg-primary-300 mx-auto text-primary-200 hover:text-white hover:bg-primary-100 rounded-[18px] flex capitalize items-center justify-center gap-[9px] w-fit duration-300  text-base lg:text-lg font-semibold font-['Jost'] leading-snug tracking-tight px-10 py-5 md:px-[54px] md:py-[16px] my-12">Daha çox <ArrowPri /></Link>
+        <Link to='/gallery' className="bg-primary-300 mx-auto text-primary-200 hover:text-white hover:bg-primary-100 rounded-[18px] flex capitalize items-center justify-center gap-[9px] w-fit duration-300  text-base lg:text-lg font-semibold font-['Jost'] leading-snug tracking-tight px-10 py-5 md:px-[54px] md:py-[16px] my-12">{t('seemore')} <ArrowPri /></Link>
 
       </section>
 
