@@ -5,5 +5,139 @@
         "gallery":"Qalereya",
         "contact":"Əlaqə"
     },
-    "homepage":""
+    "homepage":{
+        "hero":{
+            "title":"Eviniz Özəl Olsun",
+            "desc":"Evinizin fərqli interyerə sahib olmağını istəyirsizsə Redesign Luxury komandasına müraciət edə bilərsiz"
+        },
+        "setups":{
+            "bedroom":{
+                "title":"Yataq otağı",
+                "desc":"düzgün dizayn edilmiş yataq otağı , gündəlik stress və gərginlikdən qurtulmaq üçün ideal bir yer təqdim edir "
+            },
+            "kitchen":{
+                "title":"Mətbəx",
+                "desc":"Mətbəx evinizin ən vacib hissələrindən biridir. Vaxtınızın ən çox hissəsi burada keçir. Bunun üçün də mətbəx dizaynı rahat və funksional olmalıdır "
+            },
+            "living":{
+                "title":"Qonaq otağı",
+                "desc":"standartlardan kənar və gözoxşayan qonaq otağı dizaynı, görən hər kəsi valeh edəcək"
+            },
+            "kid":{
+                "title":"Uşaq otağı",
+                "desc":"Uşaq otağı dizaynı, uşağın yaşına, zövqünə və tələbatına uyğun olaraq düşünülməli bir prosesdir. Uşaqlarınızın rahat və əyləncəli vaxt keçirməsi üçün onlara unikal dizayn yaradırıq"
+            },
+            "bathroom":{
+                "title":"Hamam otağı",
+                "desc":"Hamam otağının dizaynı , istifadənin rahatlığı , məkanın səmərəli istifadə olunması və estetik gözəllik baxımından əhəmiyyətlidir."
+            },
+            "hall":{
+                "title":"Dəhliz",
+                "desc":"Dəhliz dizaynı evə ilk təəssüratı yaradır. Gözəl dizayn olunmuş dəhliz sizə və gələn qonaqlara xoş əhval ruhiyyə bəxş edəcək."
+            },
+            "laundry":{
+                "title":"Çamaşırxana",
+                "desc":"Çamaşırxana işi çox vaxt tələb edən və bəzən yorucu ola bilər. Düzgün dizayn edilmiş camaşırxana iş prosesini asanlaşdırır və vaxtı qənaətlə istifadə etməyə kömək edir. "
+            },
+            "wardrobe":{
+                "title":"Qarderob",
+                "desc":"Yaxşı dizayn edilmiş qarderob otağı geyimlərin, ayaqqabıların və aksessuarların düzgün və səliqəli şəkildə  təşkil edilməsini asanlaşdırır."
+            },
+            "exterior":{
+                "title":"Eksteryer dizayn",
+                "desc":"memarlıq və şəhərsalma sahəsində mühüm aspektdir. Binaların və məkanların funksionallığını, estetikasını və ümumi dəyərini artırır. "
+            }
+        },
+        "section2":{
+            "title":"Minimalist Toxunuşlarla Maksimum Rahatlıq",
+            "desc":"Peşəkar komandamız tərəfindən interyeriniz , ən xırda detalına qədər düşünülür"
+        },
+        "about":{
+            "title":"Haqqımızda",
+            "desc":"Biz müştərilərimizin arzularını gerçəkləşdirmək üçün buradayıq. RedesignLuxury interyerdə yaradıcılıq və funksionallığın mükəmməl birləşməsini təklif edən interyer dizayn şirkətidir."
+        },
+        "mission":{
+            "title":"Bizim Missiyamız",
+            "desc":"Missiyamız müştərilərimizə yaşayış yerlərini daha gözəl, daha funksional və daha şəxsi etməkdə kömək etməkdir. Hər bir layihə müştərilərimizin unikal ehtiyaclarına və üslublarına uyğun unikal dizaynlarla nəticələnir."
+        },
+        "projects":"Bizim Proyektlərimiz",
+        "counts":{
+            "experience":"Təcrübə",
+            "success":"Uğurlu layihə",
+            "active":"Aktiv layihələr",
+            "customers":"Xoşbəxt müştərilər"
+        }
+        
+    },
+    "services":{
+        "landscape":{
+            "title":"Landşaft Dizaynı",
+            "desc":"ərazinin peyzaj və təbii mühitini planlaşdırmaq, inkişaf etdirmək və tərtib etmək məqsədilə icra edilən bir sahədir."
+        },
+        "exterior":{
+            "title":"Eksteryer Dizayn",
+            "desc":"bir binanın və ya mülkün ərazisinin xarici görünüşünü, tərtibatını və düzəlməsini planlaşdırmaq, inkişaf etdirmək və təşkil etmək məqsədilə icra olunur."
+        },
+        "interior":{
+            "title":"İnteryer Dizayn",
+            "desc":"müştərinin tələblərini və mekanın funksional tələblərini örtüşdürən gözəl və praktik iç mekanlar yaratmağa nail olmaq məqsədilə işləyən bir sahədir."
+        },
+        "projecting":{
+            "title":"Layihələndirmə",
+            "desc":"müəyyən edilmiş şərtlər üçün sıfırdan obyekt yaratmağa imkan verən ilkin təsvirin tərtibidir."
+        },
+        "repair":{
+            "title":"Təmir/Tikinti",
+            "desc":"müasir inşaat sahəsində dayanıqlıq və uzunömürlülük təmin edən vacib bir prosesdir."
+        },
+        "how":{
+            "title":"Biz Necə İşləyirik",
+            "step1":{
+                "title":"İlkin mərhələ",
+                "desc":"Baxış və ölçünün götürülməsi üçün mənzilə(obyektə) gedilir. Sifarişçinin istəkləri nəzərə alınaraq bir neçə versiyada bölgü planı tərtib olunur. Sifarişçi tərəfindən seçilən bölgü planı üzərində yerləşim planı hazırlanır."
+            },
+            "step2":{
+                "title":"Dizayn mərhələsi",
+                "desc":"Dizayn hər bir sifarişçiyə individual olaraq hazırlanır. Mükəmməl dizaynla yanaşı , funksional və rahat interyer təqdim edilir. Hər bir detalın sifarişçiyə özəl olması üçün zövq və istəklər nəzərə alınır. İstəklərə uyğun olaraq standartlardan kənar və gözoxşayan dizayn hazırlanır."
+            },
+            "step3":{
+                "title":"Təmir mərhələsi",
+                "desc":"Dizaynın reallaşması üçün ən vacib və qəliz mərhələlərdən biri təmirdir. Ustalarımız işinin peşəkarı mühəndislərdir. Keyfiyyətli və səliqəli təmir üçün işinizi peşəkarlara həvalə edin."
+            },
+            "step4":{
+                "title":"Mebel və aksessuar mərhələsi",
+                "desc":"İnteryerin dizaynla birə-bir uyğunlaşması üçün mebel və aksessuar seçimi düzgün edilməlidir. Sifarişçinin komfortlu və estetik interyerə sahib olması üçün ən xırda detal belə diqqətlə seçilir."
+            }
+        }
+    },
+    "contact":{
+        "title":"Sizdə Redesign Luxury ilə arzuladığınız evə sahib olun",
+        "subtitle":"Xəyalındaki Evi Bizimlə Qur",
+        "name":"Ad",
+        "surname":"Soyad",
+        "phone":"Əlaqə Nömrəsi",
+        "email":"Email",
+        "address":"Mənzil Adresi",
+        "size":"Mənzil Ölçüsü",
+        "rooms":"Otaq sayı",
+        "style":"Dizayn stili",
+        "roomtype":"Otaq Tipləri",
+        "colors1":"Bəyənilən rənglər",
+        "colors2":"Bəyənilməyən rənglər",
+        "addcolor":"Rəng əlavə et",
+        "contacttype":"Əlaqə forması",
+        "mail":"Mail",
+        "telephone":"Telefon",
+        "frequency":"Məlumatlandırılma aralığı",
+        "everyday":"Hər gün",
+        "2week":"Həftədə 2 dəfə",
+        "1week":"Həftədə 1 dəfə",
+        "deadline":"Deadline",
+        "additional":"Əlavə qeydlər",
+        "write":"Qeyd edin...",
+        "submit":"Göndər"
+        
+    },
+    "pages":"Səhifələr",
+    "footerTitle":"Estetika və funksiyanın qovuşduğu yer"
 }
