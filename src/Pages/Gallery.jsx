@@ -86,6 +86,7 @@ export default function Gallery() {
           key={index}
           src={`/gallery/${file}`}
           alt={file}
+          loading="lazy"
           className="gallery-image rounded-lg m-3"
         />
       ))}
