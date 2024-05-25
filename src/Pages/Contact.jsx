@@ -3,18 +3,20 @@ import React from "react";
 import ContactForm from "../components/contact-form.tsx";
 import Order from "../components/Order.jsx";
 import ContactInfo from "../components/contact-box.jsx";
+import { useTranslation } from "react-i18next";
 const Contact = () => {
+  const {t,i18n} = useTranslation()
   return (
     <div>
       <div className="bg-contact  px-12">
         <h1 className="container py-64 text-6xl uppercase font-semibold tracking-widest text-white ">
-          Bizimlə Əlaqə
+          {t('contact-us')}
         </h1>
       </div>
 
       <section className="lg:max-w-[1200px] flex flex-col gap-8 lg:gap-10 px-12 xl:px-0 w-full mx-auto pt-[100px] lg:pt-[200px]">
         <h2 className="text-[30px] text-center  font-dm tracking-wide lg:max-w-[60%] leading-8 md:leading-[62.50px] md:text-[50px] mx-auto text-text-blue ">
-        Sizdə Redesign Luxury ilə arzuladığınız evə sahib olun
+        {t('contact.title')}
         </h2>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-[55px] pt-20  place-content-center">
