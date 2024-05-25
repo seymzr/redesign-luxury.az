@@ -3,13 +3,17 @@ import Logo from "../icons/logo.tsx";
 import useMediaQuery from "../utils/useMediaQuery.ts";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
 const Navbar = () => {
   const [toggled, setToggled] = useState(false);
   const matches = useMediaQuery("(min-width: 1280px)");
+  const {t,i18n} = useTranslation()
 
   const linkStyle = "text-xl leading-6 font-jost text-primary-200 hover:text-primary-100 font-medium duration-300";
-
+  function handleClick(lang) {
+    i18n.changeLanguage(lang)
+  }
   return (
     <div className="max-w-[1200px] px-12 xl:px-0 m-auto w-full py-3 flex justify-between items-center z-50">
       <Link to="/">
@@ -21,18 +25,18 @@ const Navbar = () => {
       {matches && (
         <nav className="flex flex-row items-center gap-6">
           <Link to="/" className={linkStyle}>
-            Ana Səhifə
+            {t('navbar.home')}
           </Link>
           <Link to="/services" className={linkStyle}>
-            Xidmətlər
+          {t('navbar.services')}
           </Link>
           <Link to="/gallery" className={linkStyle}>
-            Qalereya
+          {t('navbar.gallery')}
           </Link>
           <Link to="/contact" className={linkStyle}>
-            Əlaqə
+          {t('navbar.contact')}
           </Link>
-          <select name="" id="" className="text-lg focus:outline-none font-medium leading-6 font-jost text-primary-200">
+          <select onChange={(e)=>{handleClick(e.target.value)}} name="" id="" className="text-lg focus:outline-none font-medium leading-6 font-jost text-primary-200">
             <option value="az">AZE</option>
             <option value="en">ENG</option>
             <option value="ru">RU</option>
@@ -71,18 +75,18 @@ const Navbar = () => {
           className="flex flex-col fixed h-screen bg-white w-[75%] md:w-[90%] text-black bottom-0 left-0 gap-6 items-center justify-center"
         >
           <Link to="/" className={linkStyle}>
-            Ana Səhifə
+            {t('navbar.home')}
           </Link>
           <Link to="/services" className={linkStyle}>
-            Xidmətlər
+          {t('navbar.services')}
           </Link>
           <Link to="/gallery" className={linkStyle}>
-            Qalereya
+          {t('navbar.gallery')}
           </Link>
           <Link to="/contact" className={linkStyle}>
-            Əlaqə
+          {t('navbar.contact')}
           </Link>
-          <select name="" id="" className="text-lg focus:outline-none leading-6 font-jost text-primary-200">
+          <select  onChange={(e)=>{handleClick(e.target.value)}} name="" id="" className="text-lg focus:outline-none leading-6 font-jost text-primary-200">
             <option value="az">AZE</option>
             <option value="en">ENG</option>
             <option value="ru">RU</option>
