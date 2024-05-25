@@ -1,78 +1,70 @@
 import { Link } from "react-router-dom";
-import Facebook from "../icons/facebook.tsx";
+
 import Instagram from "../icons/instagram.tsx";
-import LinkedIn from "../icons/linkedin.tsx";
+
 import Logo from "../icons/logo.tsx";
-import Twitter from "../icons/twitter.tsx";
+
+import { useTranslation } from "react-i18next";
 
 const Footer = () => {
+  const {t,i18n} = useTranslation()
   return (
     <footer className="mt-[135px] w-full bg-white">
       <div className="w-full max-w-[1200px] px-12 xl:px-0 mx-auto pb-[135px] grid grid-cols-1 lg:grid-cols-5 md:grid-cols-2 gap-6">
         {/* start */}
         <div className="col-span-1 md:col-span-2">
-          <Link href="/" className="">
+          <Link to="/" className="">
             <Logo />
           </Link>
           <p className="tracking-tight text-base lg:text-[22px] lg:leading-[33px] font-jost text-text-gray pt-[18px] pb-[33px]">
-         Estetika və funksiyanın qovuşduğu yer
+         {t('footerTitle')}
           </p>
           <div className="flex items-center gap-5 md:gap-[54px]">
-            <a href="/">
-              <Facebook />
-            </a>
-            <a href="/">
-              <Twitter />
-            </a>
-            <a href="/">
-              <LinkedIn />
-            </a>
-            <a href="/">
+           
+            <a href="https://instagram.com/redesign_luxury" target="_blank">
               <Instagram />
             </a>
           </div>
         </div>
         <div className="col-span-1 flex flex-col gap-4">
           <p className="text-primary-200 font-dm text-[22px] lg:text-[25px] leading-loose">
-            Pages
+            {t('pages')}
           </p>
           <div className="flex flex-col gap-6">
             
             <Link
-              href="/services"
+              to="/services"
               className="tracking-tight text-base lg:text-[22px] lg:leading-[33px] font-jost text-text-gray"
             >
-              Services
+              {t('navbar.services')}
             </Link>
             <Link
-              href="/about"
+              to="/gallery"
               className="tracking-tight text-base lg:text-[22px] lg:leading-[33px] font-jost text-text-gray"
             >
-              Gallery
+             {t('navbar.gallery')}
             </Link>
             <Link
-              href="/contact"
+              to="/contact"
               className="tracking-tight text-base lg:text-[22px] lg:leading-[33px] font-jost text-text-gray"
             >
-              Contact Us
+              {t('navbar.contact')}
             </Link>
           </div>
         </div>
         <div></div>
         <div className="col-span-1 flex flex-col gap-4">
           <p className="text-primary-200 font-dm text-[22px] lg:text-[25px] leading-loose">
-            Contact
+            {t('navbar.contact')}
           </p>
           <div className="flex flex-col gap-6">
-            <p className="tracking-tight text-base lg:text-[22px] lg:leading-[33px] font-jost text-text-gray">
-              55 East Birchwood Ave. Brooklyn, New York 11201
-            </p>
-            <p className="tracking-tight text-base lg:text-[22px] lg:leading-[33px] font-jost text-text-gray">
+           
+            <a href="mailto:info@redesignluxury.az" className="tracking-tight text-base lg:text-[22px] lg:leading-[33px] font-jost text-text-gray">
               info@redesignluxury.az
-            </p>
-            <p className="tracking-tight text-base lg:text-[22px] lg:leading-[33px] font-jost text-text-gray">
+            </a>
+            <a href="tel:+994502555200" className="tracking-tight text-base lg:text-[22px] lg:leading-[33px] font-jost text-text-gray">
             +994 50 255 52 00
-            </p>
+            </a>
           </div>
         </div>
 
